@@ -12,7 +12,6 @@ module.exports = {
   title: title,
   year: new Date().getFullYear(),
   style_src: "../public/css/style.css",
-  hamburgers_style_src: "../public/css/hamburgers.css",
   img_path: "../public/img/",
   js_src: "/js/script.js",
   skills: [...skills],
@@ -51,7 +50,7 @@ module.exports = {
 
   "pt-br": {
     lang: "pt-br",
-    title: title,
+    metaTitle: title,
     metaDescription: `${title} | Site pessoal, currículo e portfólio.`,
     inSiteDescription: "Desenvolvedora front-end e estudante de UX.",
     backtoTop: "Voltar ao topo",

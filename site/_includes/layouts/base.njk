@@ -4,20 +4,19 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <title>{{ title }}</title>
+        <title>{{ site.title }}</title>
         <link rel="stylesheet" href="{{ site.style_src }}">
 
         <!-- open graph -->
         <meta property="og:type" content="article">
-        <meta property="og:title" content="{{ title }}">
+        <meta property="og:title" content="{{ metaTitle }}">
         <meta property="og:image" content="{{ metaImage }}">
-        <meta property="og:site_name" content="{{ site.name }}">
         <meta property="og:description" content="{{ metaDescription }}">
 
         <!-- twitter -->
         <meta name="twitter:card" content="summary">
         <meta name="twitter:site" content="{{ site.twitter }}">
-        <meta name="twitter:title" content="{{ title }}">
+        <meta name="twitter:title" content="{{ metaTitle }}">
         <meta name="twitter:description" content="{{ metaDescription }}">
         <meta name="twitter:image" content="{{ metaImage }}">
 
