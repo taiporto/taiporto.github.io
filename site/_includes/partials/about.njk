@@ -1,0 +1,35 @@
+<section class="resume-section about-section d-flex" id="{{locale.topics[0].name | slug}}">
+  <div class="resume-section-content">
+    <h1 class="mb-0">
+      {{personalData.firstName}}
+      <span class="text-primary">{{personalData.lastName}}</span>
+    </h1>
+    <div class="about-container row">
+      <div class="col-12 col-lg-9">
+        <div class="subheading mb-5">
+          {{personalData.location}}
+          ·
+          <a href="mailto:liabarcellos28@email.com">{{personalData.email}}</a>
+        </div>
+        <p class="lead mb-5">{{locale.inSiteDescription}}</p>
+        <div class="social-icons">
+          <a class="social-icon" href="https://www.linkedin.com/in/lia-barcellos/" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a class="social-icon" href="https://www.github.com/liaporto" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-github"></i>
+          </a>
+          <a class="social-icon" href="https://twitter.com/moonkoala_" target="_blank" rel="noopener noreferrer">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+      </div>
+      <div class="img-container d-none d-lg-flex col-lg-3 p-0 flex-column justify-content-start">
+        <img class="main-img" src="/public/img/oo.svg" alt="desenho estilizado de Lia Porto">
+      </div>
+    </div>
+  </div>
+    <a href="#{{locale.topics[1].name | slug}}" class="d-none d-md-block js-scroll-trigger align-self-center text-secondary">
+      <i class="down-icon fas fa-angle-double-down fa-lg"></i>
+    </a>
+</section>

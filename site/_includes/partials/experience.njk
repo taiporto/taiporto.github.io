@@ -1,0 +1,47 @@
+<section class="resume-section" id="{{locale.topics[1].name | slug}}">
+  <div class="resume-section-content">
+    <h2 class="mb-5">{{locale.topics[1].name}}</h2>
+
+    {% for work in locale.experience %}
+
+      <div class="d-flex flex-column mb-5">
+        <div class="row d-flex p-0">
+          <div class="col-12 col-md-9">
+            <h3 class="mb-0">{{work.title}}</h3>
+            <div class="subheading mb-2">
+              {{work.place}}
+            </div>
+          </div>
+          <div class="col-12 col-md-3 mb-2 text-md-right">
+            <span class="text-primary">{{work.period}}</span>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-9 p-0">
+          
+          {% richText %}
+            {{work.description}}
+          {% endrichText %}
+          
+        </div>
+
+        {% if work.media %}
+          <div class="container card-container row pt-3">
+            {%for media in work.media%}
+              <a class="card link-card--general col-6 col-md-4 col-xl-3" href="{{media.link}}" rel="noopener noreferrer" target="_blank">
+                <div class="card-content-wrapper">
+                  <img class="card-img" src="{{site.img_path}}{{media.img}}"/>
+                  <div class="card-img-overlay justify-content-center">
+                    <h3 class="card-title card-front-title text-center">{{media.title}}</h3>
+                  </div>
+                </div>
+              </a>
+              {%endfor%}
+
+            </div>
+            {%endif%}
+
+          </div>
+        {% endfor %}
+      </div>
+    </section>

@@ -1,0 +1,5 @@
+$image_path : "../img/";
+
+@function resolve-img-url($img_name){
+  @return url($image_path + $img_name)
+}

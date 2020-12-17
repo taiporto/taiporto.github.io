@@ -1,0 +1,38 @@
+---
+permalink: /{{ locale }}/index.html
+---
+
+{% extends "layouts/structure.njk" %}
+
+{% block content %}
+    <!-- Page Content-->
+    <div class="container-fluid p-0">
+        <!-- About-->
+        {%include 'partials/about.njk'%}
+
+        <hr class="m-0"/>
+
+        <!-- Experience-->
+        {%include 'partials/experience.njk'%}
+
+        <hr class="m-0"/>
+
+        <!-- Education-->
+        {%include 'partials/education.njk'%}
+
+        <hr class="m-0"/>
+
+        <!-- Skills-->
+        {%include 'partials/skills.njk'%}
+
+        <hr class="m-0"/>
+
+        <!-- Projects -->
+        {%include 'partials/projects.njk'%}
+
+        <hr class="m-0"/>
+
+        <!-- Interests-->
+        {%include 'partials/interests.njk'%}
+    </div>
+{% endblock %}

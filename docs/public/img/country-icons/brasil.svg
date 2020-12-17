@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<style>
+		tspan { white-space:pre }
+		.shp0 { fill: #6da544 } 
+		.shp1 { fill: #ffda44 } 
+		.shp2 { fill: #f0f0f0 } 
+		.shp3 { fill: #0052b4 } 
+	</style>
+	<path id="Layer" class="shp0" d="M0 0L512 0L512 512L0 512L0 0Z" />
+	<path id="Layer" class="shp1" d="M256 100.17L467.48 256L256 411.83L44.52 256L256 100.17Z" />
+	<path id="Layer" class="shp2" d="M256 345.04C206.76 345.04 166.96 305.24 166.96 256C166.96 206.76 206.76 166.96 256 166.96C305.24 166.96 345.04 206.76 345.04 256C345.04 305.24 305.24 345.04 256 345.04Z" />
+	<g id="Layer">
+		<path id="Layer" class="shp3" d="M211.48 250.44C195.99 250.44 181.05 252.79 166.99 257.16C167.61 305.8 207.21 345.04 256 345.04C286.17 345.04 312.81 330.03 328.92 307.08C301.36 272.58 258.96 250.44 211.48 250.44Z" />
+		<path id="Layer" class="shp3" d="M343.39 273.06C344.46 267.54 345.04 261.84 345.04 256C345.04 206.82 305.18 166.96 256 166.96C219.31 166.96 187.81 189.16 174.17 220.86C186.22 218.36 198.7 217.04 211.48 217.04C263.2 217.04 309.98 238.54 343.39 273.06Z" />
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+	<g id="Layer">
+	</g>
+</svg>

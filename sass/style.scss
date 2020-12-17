@@ -1,0 +1,26 @@
+// Import variables
+@import "_variables.scss";
+
+// Animations
+@import "animations/_go-up.scss";
+@import "animations/_go-out.scss";
+
+// Import Bootstrap
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/hamburgers/_sass/hamburgers/hamburgers.scss";
+
+// Global CSS
+@import "_global.scss";
+
+
+// Mixins
+@import "mixins/_path-resolver.scss";
+
+// Components
+@import "components/_nav.scss";
+@import "components/_icons.scss";
+@import "components/_skill-card.scss";
+@import "components/_project-card.scss";
+@import "components/_project-modal.scss";
+@import "components/_toggle-switch.scss";
+@import "components/_resume-section.scss";

@@ -1,0 +1,34 @@
+<section class="resume-section" id="{{locale.topics[3].name | slug}}">
+    <div class="resume-section-content">
+        <h2 class="mb-5">{{locale.topics[3].name}}</h2>
+        <div class="master-skills-list row justify-content-center">
+
+        {% for category in site.skills | orderSkillsMoreFirst %}
+                <div class="col-lg-4 col-xl-3 category-card d-flex flex-column align-items-center">
+                    <h3>{{category.name}}</h3>
+                    
+                    <ul class="category-card--skills-list">
+                        {% for skill in category.skills %}
+                            <li>
+                                <div class="category-card--skill-container row">
+                                    {% if skill.icon_type === "fa"%}
+                                    <i class="{{skill.icon}} skill-icon col-3 px-1 p-md-0"></i>
+                                    {%endif%}
+                                    {% if skill.icon_type === "svg"%}
+                                    <div class="skill-icon-container col-3 px-1 p-md-0 text-center">
+                                        <img src="{{site.img_path}}{{skill.icon}}" class="skill-icon--img"></img>
+                                    </div>
+                                    {%endif%}
+                                    <div class="skill-name-container col-9 p-0">
+                                        <p>{{skill.name}}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            {% endfor %}
+
+        </div>
+    </div>
+</section>
