@@ -12,7 +12,6 @@ module.exports = {
   title: title,
   year: new Date().getFullYear(),
   style_src: "../public/css/style.css",
-  hamburgers_style_src: "../public/css/hamburgers.css",
   img_path: "../public/img/",
   js_src: "/js/script.js",
   skills: [...skills],
@@ -21,7 +20,7 @@ module.exports = {
     lang: "en-us",
     metaTitle: title,
     metaDescription: `${title} - Front-end developer | Personal website, portfolio and resume`,
-    inSiteDescription: "Front-end developer and UX designer.",
+    inSiteDescription: "Front-end developer and UX student.",
     backtoTop: "Back to top",
     topics: [
       {
@@ -51,9 +50,9 @@ module.exports = {
 
   "pt-br": {
     lang: "pt-br",
-    title: title,
+    metaTitle: title,
     metaDescription: `${title} | Site pessoal, currículo e portfólio.`,
-    inSiteDescription: "Desenvolvedora Front-end e estudante de UX.",
+    inSiteDescription: "Desenvolvedora front-end e estudante de UX.",
     backtoTop: "Voltar ao topo",
     topics: [
       {
