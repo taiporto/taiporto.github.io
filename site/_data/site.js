@@ -38,9 +38,6 @@ module.exports = {
       {
         name: "Projects",
       },
-      {
-        name: "Interests",
-      },
     ],
     experience: [...experience["en-us"]],
     education: [...education["en-us"]],
@@ -69,9 +66,6 @@ module.exports = {
       },
       {
         name: "Projetos",
-      },
-      {
-        name: "Mais",
       },
     ],
     experience: [...experience["pt-br"]],
