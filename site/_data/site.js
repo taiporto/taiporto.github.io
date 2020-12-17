@@ -53,7 +53,7 @@ module.exports = {
     lang: "pt-br",
     title: title,
     metaDescription: `${title} | Site pessoal, currículo e portfólio.`,
-    inSiteDescription: "Front-end, UX e outras coisas mais.",
+    inSiteDescription: "Desenvolvedora front-end e estudante de UX.",
     backtoTop: "Voltar ao topo",
     topics: [
       {
