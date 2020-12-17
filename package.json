@@ -7,8 +7,10 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch:eleventy": "eleventy --serve",
     "gulp": "gulp",
-    "dev": "run-p watch:eleventy gulp"
+    "dev": "run-p watch:eleventy gulp",
+    "deploy": "run-p gulp-deploy eleventy"
   },
+  "homepage": "/liaporto.github.io",
   "keywords": [],
   "author": "",
   "license": "ISC",
@@ -18,6 +20,7 @@
     "@babel/core": "^7.10.3",
     "@babel/preset-env": "^7.10.3",
     "eleventy-plugin-markdown-shortcode": "^1.0.1",
+    "gh-pages": "^3.1.0",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-sass": "^4.1.0",

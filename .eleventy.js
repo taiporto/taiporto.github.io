@@ -55,6 +55,7 @@ module.exports = function(eleventyConfig){
         markdownTemplateEngine: 'njk',
         htmlTemplateEngine: 'njk',
         passthroughFileCopy: true,
+        pathPrefix: "/liaporto.github.io",
         dir: {
             input: 'site',
             includes: '_includes',

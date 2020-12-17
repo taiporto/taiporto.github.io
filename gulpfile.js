@@ -75,3 +75,6 @@ gulp.task("watch", function (done) {
 
 //task default gulp
 gulp.task("default", gulp.series("btjs", "js", "scss", "watch"))
+
+//deploy task
+gulp.task("deploy", gulp.series("btjs", "js", "scss"));
