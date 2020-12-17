@@ -18,7 +18,7 @@ module.exports = {
       name: "CalculaECO",
       links: calculaecoLinks,
       short_description:
-        "CalculaECO is a GPA calculation tool build specifically for UFRJ's Communication students",
+        "CalculaECO is a GPA calculation tool build specifically for UFRJ's Communication majors.",
     },
     {
       id: "bandejaobot_en",

@@ -7,7 +7,7 @@ module.exports = {
       title: "Customer Experience Intern",
       place: "Naturgy Brasil",
       description:
-        "- Developing and excecuting layout and funcionality changes for the internal and external Zendesk Help Centers;\n- Working with HTML, CSS, Javascript and Zendesk Curlybars;\n- E-marketing layouts planning and development;\n-Application and analysis of customer satisfaction surveys.",
+        "- Developing layout and funcionality changes for the internal and external Zendesk Help Centers;\n- Working with HTML, CSS, Javascript and Zendesk Curlybars;\n- E-marketing layouts planning and development;\n-Application and analysis of customer satisfaction surveys.",
       period: "Jan 2020 - Present",
     },
     {

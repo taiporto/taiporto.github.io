@@ -20,6 +20,9 @@
                 <div class="project-img">
                     <img src="{{site.img_path}}{{project.img}}" alt="">
                 </div>
+                <div class="project-description text-center pt-3">
+                    {{project.short_description}}
+                </div>
                 {% set snippet %}{% include '../../_data/projects_articles/' + project.id + '.md' %}{% endset %}
                 {{ snippet | markdown | safe }}
             </div>
