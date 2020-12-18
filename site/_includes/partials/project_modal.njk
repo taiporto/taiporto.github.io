@@ -9,12 +9,18 @@
             </div>
             <div class="modal-body">
                 <h2>{{project.name}}</h2>
-                <div class="social-icons project-links">
-                    <a class="social-icon" href="{{project.links['github']}}" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
-                        <i class="fab fa-github"></i>
+                <div class="social-icons project-links d-flex justify-content-center">
+                    <a class="link-card d-flex align-items-center" href="{{project.links['github']}}" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
+                        <div class="social-icon mr-1">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <span class="text-primary">Github</span>
                     </a>
-                    <a class="social-icon" href="{{project.links['website']}}" target="_blank" rel="noopener noreferrer" alt="Site ou plataforma">
-                        <i class="fas fa-desktop"></i>
+                    <a class="link-card d-flex align-items-center" href="{{project.links['website']}}" target="_blank" rel="noopener noreferrer" alt="Site ou plataforma">
+                        <div class="social-icon mr-1">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <span class="text-primary">Site/Perfil</span>
                     </a>
                 </div>
                 <div class="project-img">

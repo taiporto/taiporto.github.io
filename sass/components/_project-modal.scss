@@ -21,17 +21,17 @@
     padding: 0 0 1em;
     border-bottom: 1px solid $primary;
 
+    .link-card{
+      &:first-child{
+        margin-right: 4rem;
+      }
+    }
+
     .social-icon{
       width: 2em;
       height: 2em;
       background-color: $primary;
-      &:hover{
-        background-color: $primary;
-      }
-
-      &:first-child{
-        margin-right: 3rem;
-      }
+      margin-right: 0px;
     }
   }
 
