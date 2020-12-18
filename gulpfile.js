@@ -24,7 +24,7 @@ function onError(err) {
 }
 
 gulp.task('cleanJs', function(){
-  return del(['docs/js/jquery-ui.min.js']);
+  return del(['docs/js/*.js']);
 });
 
 gulp.task("scss", function (done) {
