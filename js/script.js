@@ -14,15 +14,13 @@ function toggleLanguage() {
   }
 } 
 
-
 //On document ready
-;
-
-(function ($) {
+;(function ($) {
   "use strict"; // Start of use strict
 
-  var scrollOffset = 40; // Closes responsive menu when user clicks outside of it
-
+  var scrollOffset = 40;
+  
+  // Closes responsive menu when user clicks outside of it
   $(document).click(function (e) {
     if ($(".navbar-collapse").hasClass("show") && !$(e.target).hasClass("navbar-collapse") && !$(e.target).parents().hasClass("navbar-collapse")) {
       $("#navbarSupportedContent").collapse("hide");
@@ -34,6 +32,17 @@ function toggleLanguage() {
   $('#navbarSupportedContent').on('hide.bs.collapse', function () {
     $(".hamburger").removeClass("is-active");
   });
+
+  // Only shows menu items after hamburger menu is open
+  if(window.innerWidth <= 992){
+    console.log("here")
+    $('#navbarSupportedContent').on('shown.bs.collapse', function () {
+      $(".navbar-nav").css("opacity", "1");
+    });
+    $('#navbarSupportedContent').on('hide.bs.collapse', function () {
+      $(".navbar-nav").css("opacity", "0");
+    });
+  }
 
   /*!
    * Start Bootstrap - Resume v6.0.1 (https://startbootstrap.com/template-overviews/resume)
