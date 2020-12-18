@@ -13,7 +13,7 @@ module.exports = function(eleventyConfig){
     eleventyConfig.addLayoutAlias('default', 'layouts/default.njk');
 
     eleventyConfig.addPassthroughCopy("public");
-    eleventyConfig.addPassthroughCopy("js");
+
 
     //adding plugins
     eleventyConfig.addPlugin(markdownShortcode);

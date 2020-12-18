@@ -9,6 +9,10 @@
   border-radius: 200px;
   border: 0.15rem solid fade-out($white, 0.8);
 
+  &:focus{
+    outline: dotted 1px $white;
+  }
+
   .toggle-switch__side {
     position: relative;
     width: 50%;

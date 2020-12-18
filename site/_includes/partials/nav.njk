@@ -1,35 +1,37 @@
-<nav class="navbar d-flex navbar-expand-lg navbar-dark bg-primary fixed-top" id="topNav">
+<header class="header d-flex fixed-top bg-primary" id="topNav">
+    <nav class="navbar navbar-expand-lg navbar-dark p-0">
+        <div class="controllers-container hamburger-outer-container d-lg-none">
+            <div class="navbar-collapse-container hamburger-inner-container">
+                <button class="navbar-toggler hamburger hamburger--stand" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="hamburger-box">
+                        <span class="hamburger-inner"></span>
+                    </span>
+                </button>
+            </div>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+            {% for topic in locale.topics %}
+                    <li class="nav-item">
+                        <a class="nav-link js-scroll-trigger" href="#{{topic.name | slug}}">{{topic.name}}</a>
+                    </li>
+            {% endfor %}
+            </ul>
+        </div>
+    </nav>
+    
+    <a class="home-icon js-scroll-trigger d-lg-none" href="#page-top">
+        <i class="align-self-center fas fa-home"></i>
+    </a>
 
     <div class="toggle-container">
-        <button class="btn toggle-switch" aria-label="{{"Mudar o idioma para português brasileiro" if (locale.lang === "en-us") else "Change language to english"}}" onclick="toggleLanguage()" aria-pressed={{"true" if (locale.lang === "en-us") else "false"}}>
+        <button class="btn toggle-switch" tabindex="0" aria-label="{{"Mudar o idioma para português brasileiro" if (locale.lang === "en-us") else "Change language to english"}}" onclick="toggleLanguage()" aria-pressed={{"true" if (locale.lang === "en-us") else "false"}}>
             <div class="toggle-switch__side" id="pt-br"></div>
             <div class="toggle-switch__side" id="en-us"></div>
         </button>
     </div>
         
-    <a class="navbar-brand js-scroll-trigger d-flex flex-row-reverse d-lg-block" href="#page-top">
-        <i class="d-block align-self-center fas fa-home d-lg-none"></i>
-    </a>
+    
 
-
-    <div class="controllers-container hamburger-outer-container d-lg-none">
-        <div class="navbar-collapse-container hamburger-inner-container">
-            <button class="navbar-toggler hamburger hamburger--stand" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="hamburger-box">
-                    <span class="hamburger-inner"></span>
-                </span>
-            </button>
-        </div>
-    </div>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav">
-        {% for topic in locale.topics %}
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#{{topic.name | slug}}">{{topic.name}}</a>
-                </li>
-        {% endfor %}
-        </ul>
-    </div>
-
-</nav>
+</header>

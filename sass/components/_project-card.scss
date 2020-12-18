@@ -90,7 +90,7 @@
       animation-fill-mode: forwards;
     }
 
-    &:hover {
+    &:hover, &:focus {
       .card-content-wrapper {
         transform: scale(1.025);
         border-color: lighten($primary, 20%);

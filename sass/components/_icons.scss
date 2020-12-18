@@ -11,11 +11,15 @@
         border-radius: 100%;
         font-size: 1.5rem;
         margin-right: 1.5rem;
+        transition: border 0.2s;
         &:last-child {
             margin-right: 0;
         }
         &:hover {
             background-color: $primary;
+        }
+        &:focus{
+            border: 0.3rem solid fade-out($white, 0.8);
         }
     }
 }
