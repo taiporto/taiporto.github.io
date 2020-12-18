@@ -1,14 +1,32 @@
 const projectsImgsPath = "projects/";
 const calculaecoImgPath = `${projectsImgsPath}calcula-eco.png`;
 const bandejaobotImgPath = `${projectsImgsPath}bandejaobot.png`;
-const calculaecoLinks = {
-  website:'http://calcula-eco.herokuapp.com/', 
-  github: 'https://github.com/liaporto/calcula-eco'
-}
-const bandejaobotLinks = {
-  website:'https://twitter.com/bandejaobotufrj', 
-  github: 'https://github.com/liaporto/bandejaobot-ufrj'
-}
+
+const calculaecoLinks = [
+  {
+    type: "Github",
+    url: 'https://github.com/liaporto/calcula-eco',
+    icon: "fab fa-github"
+  },
+  {
+    type: "Site/Perfil",
+    url:'http://calcula-eco.herokuapp.com/',
+    icon: "fas fa-desktop"
+  },
+]
+
+const bandejaobotLinks = [
+  {
+    type: "Github",
+    url: 'https://github.com/liaporto/bandejaobot-ufrj',
+    icon: "fab fa-github"
+  },
+  {
+    type: "Site/Perfil",
+    url:'https://twitter.com/bandejaobotufrj',
+    icon: "fas fa-desktop"
+  },
+]
 
 module.exports = {
   "en-us": [
