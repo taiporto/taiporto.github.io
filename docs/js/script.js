@@ -1,1 +1,82 @@
-"use strict";function toggleLanguage(){switch(window.location.pathname){case"/pt-br/":return window.location="/en-us";case"/en/":default:return window.location="/pt-br"}}!function(n){var o=40;n(document).click(function(a){!n(".navbar-collapse").hasClass("show")||n(a.target).hasClass("navbar-collapse")||n(a.target).parents().hasClass("navbar-collapse")||n("#navbarSupportedContent").collapse("hide")}),n("#navbarSupportedContent").on("show.bs.collapse",function(){n(".hamburger").addClass("is-active")}),n("#navbarSupportedContent").on("hide.bs.collapse",function(){n(".hamburger").removeClass("is-active")}),window.innerWidth<=992&&(console.log("here"),n("#navbarSupportedContent").on("shown.bs.collapse",function(){n(".navbar-nav").css("opacity","1")}),n("#navbarSupportedContent").on("hide.bs.collapse",function(){n(".navbar-nav").css("opacity","0")})),n('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function(a){if(location.pathname.replace(/^\//,"")==this.pathname.replace(/^\//,"")&&location.hostname==this.hostname){var t=(t=n(this.hash)).length?t:n("[name="+this.hash.slice(1)+"]");if((n(a.target).hasClass("back-to-top")||n(a.target).parents().hasClass("back-to-top"))&&(o=70),t.length)return n("html, body").animate({scrollTop:t.offset().top-o},800,function(){n(t).focus()}),!1}}),n(".js-scroll-trigger").click(function(){n("#navbarSupportedContent").collapse("hide")}),n("body").scrollspy({target:"#topNav",offset:o+5})}(jQuery);
+"use strict"; //Utility functions
+//Muda a língua
+
+function toggleLanguage() {
+  switch (window.location.pathname) {
+    case "/pt-br/":
+      return window.location = "/en-us";
+
+    case "/en/":
+      return window.location = "/pt-br";
+
+    default:
+      return window.location = "/pt-br";
+  }
+} //On document ready
+
+
+;
+
+(function ($) {
+  "use strict"; // Start of use strict
+
+  var scrollOffset = 40; // Closes responsive menu when user clicks outside of it
+
+  $(document).click(function (e) {
+    if ($(".navbar-collapse").hasClass("show") && !$(e.target).hasClass("navbar-collapse") && !$(e.target).parents().hasClass("navbar-collapse")) {
+      $("#navbarSupportedContent").collapse("hide");
+    }
+  });
+  $('#navbarSupportedContent').on('show.bs.collapse', function () {
+    $(".hamburger").addClass("is-active");
+  });
+  $('#navbarSupportedContent').on('hide.bs.collapse', function () {
+    $(".hamburger").removeClass("is-active");
+  }); // Only shows menu items after hamburger menu is open
+
+  if (window.innerWidth <= 992) {
+    console.log("here");
+    $('#navbarSupportedContent').on('shown.bs.collapse', function () {
+      $(".navbar-nav").css("opacity", "1");
+    });
+    $('#navbarSupportedContent').on('hide.bs.collapse', function () {
+      $(".navbar-nav").css("opacity", "0");
+    });
+  }
+  /*!
+   * Start Bootstrap - Resume v6.0.1 (https://startbootstrap.com/template-overviews/resume)
+   * Copyright 2013-2020 Start Bootstrap
+   * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
+   */
+  // Smooth scrolling using jQuery easing
+
+
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function (e) {
+    if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+
+      if ($(e.target).hasClass("back-to-top") || $(e.target).parents().hasClass("back-to-top")) {
+        scrollOffset = 70;
+      }
+
+      if (target.length) {
+        $("html, body").animate({
+          scrollTop: target.offset().top - scrollOffset
+        }, 800, function () {
+          $(target).focus();
+        });
+        return false;
+      }
+    }
+  }); // Closes responsive menu when a scroll trigger link is clicked
+
+  $(".js-scroll-trigger").click(function () {
+    $("#navbarSupportedContent").collapse("hide");
+  }); // Activate scrollspy to add active class to navbar items on scroll
+
+  $("body").scrollspy({
+    target: "#topNav",
+    offset: scrollOffset + 5
+  });
+})(jQuery); // End of use strict

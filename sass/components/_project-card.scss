@@ -61,24 +61,23 @@
     }
   }
   
-  @include media-breakpoint-between(md, lg){
+  @include media-breakpoint-only(md){
     .card-text{
-      display: none;
+      font-size: 1em;
     }
 
     .card-title{
-      font-size: 1.4em;
+      font-size: 1.5em;
     }
   }
 
   @include media-breakpoint-up(lg){
-
     .card-title{
-      font-size: 1.4em;
+      font-size: 1.5em;
     }
 
     .card-text{
-      font-size: 0.8em;
+      display: none;
     }
 
     .card-img{
@@ -109,12 +108,22 @@
     }
   }
 
+  @include media-breakpoint-up(xl){
+
+    .card-title{
+      font-size: 1.4em;
+    }
+    
+    .card-text{
+      display: block;
+      font-size: 1em;
+    }
+   
+  }
+
   @media(min-width: 1300px){
     .card-title{
       font-size: 2em;
-    }
-    .card-text {
-      font-size: 1rem;
     }
   }
 
