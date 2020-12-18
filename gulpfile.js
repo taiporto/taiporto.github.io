@@ -67,7 +67,7 @@ gulp.task("devjs", function (done) {
 
 gulp.task("jsproduction", function (done) {
   gulp
-    .src(["js/jquery-ui.min.js", "js/script.js"])
+    .src(["js/*.js"])
     .pipe(
       plumber({
         errorHandler: onError,
