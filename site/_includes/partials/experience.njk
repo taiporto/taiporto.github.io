@@ -28,7 +28,7 @@
         {% if work.media %}
           <div class="container card-container row pt-3">
             {%for media in work.media%}
-              <a class="card link-card--general col-6 col-md-4 col-xl-3" tabindex="0" href="{{media.link}}" alt="{{media.title}}" rel="noopener noreferrer" target="_blank">
+              <a class="card link-card--general col-6 col-md-4 col-xl-3" tabindex="0" href="{{media.link}}" alt="{{media.title}}" aria-label="{{media.title}}" rel="noopener noreferrer" target="_blank">
                 <div class="card-content-wrapper">
                   <img class="card-img" src="{{site.img_path}}{{media.img}}"/>
                   <div class="card-img-overlay justify-content-center">

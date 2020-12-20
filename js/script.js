@@ -35,7 +35,7 @@ function toggleLanguage() {
 
   // Only shows menu items after hamburger menu is open
   if(window.innerWidth <= 992){
-    console.log("here")
+    $(".navbar-nav").css("opacity", "0");
     $('#navbarSupportedContent').on('shown.bs.collapse', function () {
       $(".navbar-nav").css("opacity", "1");
     });
@@ -64,7 +64,9 @@ function toggleLanguage() {
         $("html, body").animate({
           scrollTop: target.offset().top - scrollOffset
         }, 800, function () {
-          $(target).focus();
+          if(window.innerWidth > 992){
+            $(target).focus();
+          }
         });
         return false;
       }

@@ -3,7 +3,7 @@
     <nav class="navbar navbar-expand-lg navbar-dark p-0">
         <div class="controllers-container hamburger-outer-container d-lg-none">
             <div class="navbar-collapse-container hamburger-inner-container">
-                <button class="navbar-toggler hamburger hamburger--stand" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler hamburger hamburger--stand" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{"Toggle navigation" if (locale.lang === "en-us") else "Abrir fechar menu"}}">
                     <span class="hamburger-box">
                         <span class="hamburger-inner"></span>
                     </span>
@@ -22,12 +22,12 @@
         </div>
     </nav>
 
-    <a class="home-icon js-scroll-trigger d-lg-none" href="#page-top">
+    <a class="home-icon js-scroll-trigger d-lg-none" href="#page-top" alt="{{locale.backtoTop}}" aria-label="{{locale.backtoTop}}">
         <i class="align-self-center fas fa-home"></i>
     </a>
 
     <div class="toggle-container">
-        <button class="btn toggle-switch" tabindex="0" aria-label="{{"Mudar o idioma para português brasileiro" if (locale.lang === "en-us") else "Change language to english"}}" onclick="toggleLanguage()" aria-pressed={{"true" if (locale.lang === "en-us") else "false"}}>
+        <button class="btn toggle-switch" tabindex="0" aria-label="{{"Change language to brazilian portuguese" if (locale.lang === "en-us") else "Mudar o idioma para inglês"}}" onclick="toggleLanguage()" aria-pressed={{"true" if (locale.lang === "en-us") else "false"}}>
             <div class="toggle-switch__side" id="pt-br"></div>
             <div class="toggle-switch__side" id="en-us"></div>
         </button>
