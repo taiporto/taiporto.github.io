@@ -17,8 +17,14 @@ function toggleLanguage() {
 //On document ready
 ;(function ($) {
   "use strict"; // Start of use strict
+  var screenSize = window.innerWidth, scrollOffset;
 
-  var scrollOffset = 40;
+  if(screenSize <= 992){
+    scrollOffset = 60;
+  } else {
+    scrollOffset = 40;
+  }
+
   
   // Closes responsive menu when user clicks outside of it
   $(document).click(function (e) {
@@ -34,7 +40,7 @@ function toggleLanguage() {
   });
 
   // Only shows menu items after hamburger menu is open
-  if(window.innerWidth <= 992){
+  if(screenSize <= 992){
     $(".navbar-nav").css("opacity", "0");
     $('#navbarSupportedContent').on('shown.bs.collapse', function () {
       $(".navbar-nav").css("opacity", "1");
@@ -64,7 +70,7 @@ function toggleLanguage() {
         $("html, body").animate({
           scrollTop: target.offset().top - scrollOffset
         }, 800, function () {
-          if(window.innerWidth > 992){
+          if(screenSize > 992){
             $(target).focus();
           }
         });
