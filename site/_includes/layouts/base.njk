@@ -8,17 +8,14 @@
         <link rel="stylesheet" href="{{ site.style_src }}">
 
         <!-- open graph -->
-        <meta property="og:type" content="article">
-        <meta property="og:title" content="{{ metaTitle }}">
-        <meta property="og:image" content="{{ metaImage }}">
-        <meta property="og:description" content="{{ metaDescription }}">
+        <meta property="og:title" content="{{ metaTitle }}"/>
+        <meta property="og:description" content="{{ metaDescription }}"/>
+        <meta property="og:image" content="{{ site.metaImage }}"/>
+        <meta property="og:url" content="{{ site.baseUrl }}"/>
 
         <!-- twitter -->
-        <meta name="twitter:card" content="summary">
-        <meta name="twitter:site" content="{{ site.twitter }}">
-        <meta name="twitter:title" content="{{ metaTitle }}">
-        <meta name="twitter:description" content="{{ metaDescription }}">
-        <meta name="twitter:image" content="{{ metaImage }}">
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:creator" content="{{ personalData.twitterHandle }}"/>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-BBPCZ13F82"></script>

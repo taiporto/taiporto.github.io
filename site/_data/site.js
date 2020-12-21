@@ -5,21 +5,24 @@ skills = require("./site_data/skills")
 interests = require("./site_data/interests")
 
 const title = "Lia Porto"
+const imgPath = "../public/img/";
+const baseUrl = "https://www.liaporto.github.io";
 
 module.exports = {
   buildTime: new Date(),
-  baseUrl: "https://www.liaporto.github.io",
+  baseUrl: baseUrl,
   title: title,
   year: new Date().getFullYear(),
   style_src: "../public/css/style.css",
-  img_path: "../public/img/",
+  img_path: `${imgPath}`,
+  metaImage: `${imgPath}metaimg.png`,
   js_src: "/js/script.js",
   skills: [...skills],
 
   "en-us": {
     lang: "en-us",
-    metaTitle: title,
-    metaDescription: `${title} - Front-end developer | Personal website, portfolio and resume`,
+    metaTitle: `${title} - Front-end developer`,
+    metaDescription: `Personal website, portfolio and resume`,
     inSiteDescription: "Front-end developer and UX student.",
     backtoTop: "Back to top",
     topics: [
@@ -47,8 +50,8 @@ module.exports = {
 
   "pt-br": {
     lang: "pt-br",
-    metaTitle: title,
-    metaDescription: `${title} | Site pessoal, currículo e portfólio.`,
+    metaTitle: `${title} - Desenvolvedora front-end`,
+    metaDescription: `Site pessoal, currículo e portfólio.`,
     inSiteDescription: "Desenvolvedora front-end e estudante de UX.",
     backtoTop: "Voltar ao topo",
     topics: [
