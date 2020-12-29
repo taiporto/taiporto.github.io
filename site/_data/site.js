@@ -21,7 +21,7 @@ module.exports = {
 
   "en-us": {
     lang: "en-us",
-    metaTitle: `${title} - Front-end developer`,
+    metaTitle: `${title}`,
     metaDescription: `Personal website, portfolio and resume`,
     inSiteDescription: "Front-end developer and UX student.",
     backtoTop: "Back to top",
@@ -50,7 +50,7 @@ module.exports = {
 
   "pt-br": {
     lang: "pt-br",
-    metaTitle: `${title} - Desenvolvedora front-end`,
+    metaTitle: `${title}`,
     metaDescription: `Site pessoal, currículo e portfólio.`,
     inSiteDescription: "Desenvolvedora front-end e estudante de UX.",
     backtoTop: "Voltar ao topo",
