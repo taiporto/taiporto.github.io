@@ -28,14 +28,6 @@
     "gulp-babel": "^8.0.0",
     "gulp-sass": "^4.1.0",
     "gulp-sourcemaps": "^2.6.5",
-    "markdown-it": "^11.0.0",
-    "markdown-it-anchor": "^5.3.0",
-    "npm-run-all": "^4.1.5",
-    "uslug": "^1.0.4"
-  },
-  "dependencies": {
-    "autoprefixer": "^10.0.0",
-    "bootstrap": "^4.5.0",
     "cssnano": "^4.1.10",
     "gulp-concat": "^2.6.1",
     "gulp-minify-css": "^1.2.4",
@@ -45,9 +37,16 @@
     "gulp-rename": "^2.0.0",
     "gulp-size": "^3.0.0",
     "gulp-uglify": "^3.0.2",
+    "markdown-it": "^11.0.0",
+    "markdown-it-anchor": "^5.3.0",
+    "npm-run-all": "^4.1.5",
+    "uslug": "^1.0.4",
+    "autoprefixer": "^10.0.0",
+    "postcss": "^8.0.9"
+  },
+  "dependencies": {
+    "bootstrap": "^4.5.0",
     "hamburgers": "^1.1.3",
-    "jquery": "^3.5.1",
-    "postcss": "^8.0.9",
-    "usedcss": "^1.0.7"
+    "jquery": "^3.5.1"
   }
 }
