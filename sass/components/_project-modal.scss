@@ -1,34 +1,35 @@
-.project-modal .modal-dialog{
+.project-modal .modal-dialog {
   max-width: 800px;
 }
 
-.project-modal .modal-header{
+.project-modal .modal-header {
   border: none;
-  padding-bottom: 0px;
+  padding-bottom: 0;
 }
 
-.project-modal .modal-body{
-  padding-left: 3em;
-  padding-right: 3em;
-  padding-bottom: 4em;
-  
-  h2{
+.project-modal .modal-body {
+  padding: 1em 3em 4em;
+  // padding-left: 3em;
+  // padding-right: 3em;
+  // padding-bottom: 4em;
+
+  h2 {
     text-align: center;
   }
 
-  .social-icons{
+  .social-icons {
     text-align: center;
     padding: 0 0 1em;
     border-bottom: 1px solid $primary;
 
-    .link-card{
+    .link-card {
       margin-right: 1.5rem;
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
     }
 
-    .social-icon{
+    .social-icon {
       width: 2em;
       height: 2em;
       background-color: $primary;
@@ -36,8 +37,8 @@
     }
   }
 
-  .project-img{
-    img{
+  .project-img {
+    img {
       width: 100%;
       margin-top: 1em;
       border: 2px solid $primary;
@@ -45,24 +46,31 @@
   }
 }
 
-@include media-breakpoint-only(md){
-  .project-modal .modal-dialog{
-    max-width: 600px;
+@include media-breakpoint-up(md) {
+  .project-modal .modal-dialog {
+    max-width: 690px;
   }
-}
-
-@include media-breakpoint-up(md){
-  .project-modal .modal-body{
-    .project-img{
+  .project-modal .modal-body {
+    .project-img {
       margin: 0;
       padding: 1em 4em;
     }
 
-    .link-card{
+    .link-card {
       margin-right: 4rem;
-      &:last-child{
+      &:last-child {
         margin-right: 0;
       }
     }
+  }
+}
+
+@include media-breakpoint-up(lg) {
+  .project-modal .modal-header {
+    padding: 1em 3em 0;
+  }
+
+  .project-modal .modal-body h2 {
+    margin-bottom: 0.5em;
   }
 }

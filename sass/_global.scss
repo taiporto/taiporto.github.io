@@ -21,28 +21,22 @@ h1 {
   line-height: 1;
 }
 
-@include media-breakpoint-down(sm){
-  h1 {
-    font-size: 4.5rem;
-  }
-}
-
 p.lead {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   font-weight: 400;
-}
-
-.card a {
-  &:hover {
-    text-decoration: none !important;
-  }
 }
 
 .subheading {
   font-family: $headings-font-family;
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.5em;
+}
+
+.card a {
+  &:hover {
+    text-decoration: none !important;
+  }
 }
 
 .modal{
@@ -53,6 +47,11 @@ footer{
   font-size: 0.8em;
 }
 
+@include media-breakpoint-down(sm){
+  h1 {
+    font-size: 4.5rem;
+  }
+}
 
 @include media-breakpoint-up(md) {
   body {
@@ -63,5 +62,14 @@ footer{
 @include media-breakpoint-up(lg) {
   body {
     padding: $navbar-base-height $body-desktop-base-margin 0;
+  }
+  h1{
+    font-size: 5em;
+  }
+}
+
+@media(min-width: 1600px){
+  h1{
+    font-size: initial;
   }
 }

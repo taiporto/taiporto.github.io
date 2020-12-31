@@ -116,14 +116,18 @@
     
     .card-text{
       display: block;
-      font-size: 1em;
+      font-size: 0.8em;
     }
    
   }
 
-  @media(min-width: 1300px){
+  @media(min-width: 1600px){
     .card-title{
       font-size: 2em;
+    }
+    .card-text{
+      display: block;
+      font-size: 1em;
     }
   }
 

@@ -75,9 +75,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    
     font-size: 0.9em;
-
     display: flex;
     flex-direction: row;
 
@@ -107,6 +105,7 @@
           display: block;
           .nav-link {
             display: block;
+            font-size: 1em;
           }
         }
       }
