@@ -86,4 +86,4 @@ function toggleLanguage() {
     target: "#topNav",
     offset: scrollOffset + 5
   });
-})(jQuery); // End of use strict
+})(jQuery);
