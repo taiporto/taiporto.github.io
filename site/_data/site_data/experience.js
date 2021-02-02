@@ -1,5 +1,6 @@
 const experienceLinksImgPath = "other_links/";
-const siacImgPath = `${experienceLinksImgPath}siac.png`;
+const siacImgPath = `${experienceLinksImgPath}siac.jpg`;
+const naturgyImgPath = `${experienceLinksImgPath}naturgy.jpg`;
 
 module.exports = {
   "en-us": [
@@ -9,6 +10,13 @@ module.exports = {
       description:
         "- Developing layout and funcionality changes for the internal and external Zendesk Help Centers;\n- Working with HTML, CSS, Javascript and Zendesk Curlybars;\n- E-marketing layouts planning and development;\n-Application and analysis of customer satisfaction surveys.",
       period: "Jan 2020 - Present",
+      media: [
+        {
+          link: "https://www.minhanaturgy.com.br",
+          title: "Minha Naturgy",
+          img: naturgyImgPath,
+        }
+      ]
     },
     {
       title: "Extensionist",
@@ -30,8 +38,15 @@ module.exports = {
       title: "Estagiária de Experiência do cliente",
       place: "Naturgy Brasil",
       description:
-        "- Atualizações de layout e criação de funcionalidades para as centrais de ajuda internas e externas da empresa;\n- Planejamento e montagem de layouts de e-mail marketing;\n- Aplicação e análise de pesquisas de satisfação.",
+        "- Atualizações de layout e criação de funcionalidades para a central de ajuda interna e para o portal de auto atendimento Minha Naturgy;\n- Planejamento e montagem de layouts de e-mail marketing;\n- Aplicação e análise de pesquisas de satisfação.",
       period: "Jan 2020 - Atualmente",
+      media: [
+        {
+          link: "https://www.minhanaturgy.com.br",
+          title: "Minha Naturgy",
+          img: naturgyImgPath,
+        }
+      ]
     },
     {
       title: "Bolsista de desenvolvimento web",

@@ -16,7 +16,6 @@ function toggleLanguage() {
 
 //On document ready
 ;(function ($) {
-  "use strict"; // Start of use strict
   var screenSize = window.innerWidth, scrollOffset;
 
   if(screenSize <= 992){
