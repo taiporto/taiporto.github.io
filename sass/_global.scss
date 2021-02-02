@@ -67,3 +67,9 @@ footer{
     font-size: 5em;
   }
 }
+
+@media(min-width: 1800px){
+  body, p.lead{
+    font-size: 1.15rem;
+  }
+}
