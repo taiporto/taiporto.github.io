@@ -23,7 +23,7 @@ module.exports = {
     lang: "en-us",
     metaTitle: `${title}`,
     metaDescription: `Personal website, portfolio and resume`,
-    inSiteDescription: "Front-end developer and UX student.",
+    inSiteDescription: "Front-end developer and Communications student at UFRJ.",
     backtoTop: "Back to top",
     topics: [
       {
@@ -52,7 +52,7 @@ module.exports = {
     lang: "pt-br",
     metaTitle: `${title}`,
     metaDescription: `Site pessoal, currículo e portfólio.`,
-    inSiteDescription: "Desenvolvedora front-end e estudante de UX.",
+    inSiteDescription: "Desenvolvedora front-end e estudante de Comunicação Social na UFRJ.",
     backtoTop: "Voltar ao topo",
     topics: [
       {
