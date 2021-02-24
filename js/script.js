@@ -20,8 +20,10 @@ function toggleLanguage() {
 
   if(screenSize <= 992){
     scrollOffset = 60;
-  } else {
+  } else if(screenSize < 1800){
     scrollOffset = 40;
+  } else {
+    scrollOffset = 35;
   }
 
   
