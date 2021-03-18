@@ -44,7 +44,7 @@ module.exports = {
       name: "BandejãoBot UFRJ",
       links: bandejaobotLinks,
       short_description:
-        "BandejãoBot UFRJ is a Twitter bot that posts the menu from the UFRJ's cafeteria at 9AM everyday.",
+        "BandejãoBot UFRJ is a Twitter bot and it posts UFRJ's cafeteria menu daily at 9AM.",
     },
   ],
   "pt-br": [

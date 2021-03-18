@@ -1,10 +1,12 @@
+const cra = 9.3
+
 module.exports = {
   "en-us": [
     {
       name: "Federal University of Rio de Janeiro",
-      title: "B.A in Communications",
-      info: "Bachelor Degree in Communications, currently on third semester.",
-      gpa: "GPA: " + ((9.3 * 4) / 10).toFixed(2),
+      title: "B.A in Communications - Editorial Production",
+      info: "Bachelor Degree in Communications - Editorial Production, currently on fourth semester.",
+      gpa: "GPA: " + ((cra * 4) / 10).toFixed(2),
       period: "Mar 2019 - Atualmente",
     },
     {
@@ -16,9 +18,9 @@ module.exports = {
   "pt-br": [
     {
       name: "Universidade Federal do Rio de Janeiro",
-      title: "Bacharelado em Comunicação Social",
-      info: "Bacharelado em Comunicação Social. Atualmente no 3º período.",
-      gpa: "C.R.A 9.3",
+      title: "Bacharelado em Comunicação Social - Produção Editorial",
+      info: "Bacharelado em Comunicação Social com habilitação em Produção Editorial. Atualmente no 4º período.",
+      gpa: `C.R.A ${cra}`,
       period: "Mar 2019 - Atualmente",
     },
     {

@@ -8,7 +8,7 @@ module.exports = {
       title: "Customer Experience Intern",
       place: "Naturgy Brasil",
       description:
-        "- Developing layout and funcionality changes for the internal and external Zendesk Help Centers;\n- Working with HTML, CSS, Javascript and Zendesk Curlybars;\n- E-marketing layouts planning and development;\n-Application and analysis of customer satisfaction surveys.",
+        "- Development of layout changes and new functionalities for the Zendesk-based help center 'Minha Naturgy' using results from customer satisfaction surveys and Google Analytics data as reference;\n- E-marketing layout development;\n- Development and analysis of customer satisfaction surveys.",
       period: "Jan 2020 - Present",
       media: [
         {
@@ -22,7 +22,7 @@ module.exports = {
       title: "Extensionist",
       place: "Federal University of Rio de Janeiro",
       description:
-        "Extensionist at the UFRJ's Pro-rectory of Academic Extension Programs.\nIntegrated the development team for the new UFRJ SIAc (Academic Integration Week) website, collaborating with the internal design and backend development teams.",
+        "Extensionist at UFRJ's Pro-rectory of Academic Extension Programs.\nWas a part of the development team for the new UFRJ SIAc (Academic Integration Week) website, working beside the design and backend development teams.",
       period: "Jan 2020 - May 2020",
       media: [
         {
@@ -38,7 +38,7 @@ module.exports = {
       title: "Estagiária de Experiência do cliente",
       place: "Naturgy Brasil",
       description:
-        "- Atualizações de layout e criação de funcionalidades para a central de ajuda interna e para o portal de auto atendimento Minha Naturgy;\n- Planejamento e montagem de layouts de e-mail marketing;\n- Aplicação e análise de pesquisas de satisfação.",
+        "- Atualizações de layout e criação de funcionalidades para a central de ajuda interna e para o portal de auto atendimento Minha Naturgy;\n- Análise de resultados de pesquisas de satisfação e métricas de uso disponibilizadas através do Google Analytics;\n- Planejamento e montagem de layouts de e-mail marketing;\n- Desenovlimento e aplicação de pesquisas de satisfação.",
       period: "Jan 2020 - Atualmente",
       media: [
         {
