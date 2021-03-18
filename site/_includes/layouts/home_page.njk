@@ -4,7 +4,7 @@ permalink: /{{ locale }}/index.html
 
 {% extends "layouts/structure.njk" %}
 
-{% block content %}
+{% block home_page %}
 
     <!-- Navigation -->
     {% include "partials/nav.njk" %}
@@ -16,6 +16,11 @@ permalink: /{{ locale }}/index.html
 
         <hr class="m-0" tabindex="-1"/>
 
+        <!-- Projects -->
+        {%include 'partials/projects.njk'%}
+
+        <hr class="m-0" tabindex="-1"/>
+        
         <!-- Experience-->
         {%include 'partials/experience.njk'%}
 
@@ -31,10 +36,6 @@ permalink: /{{ locale }}/index.html
 
         <hr class="m-0" tabindex="-1"/>
 
-        <!-- Projects -->
-        {%include 'partials/projects.njk'%}
-
-        <hr class="m-0" tabindex="-1"/>
 
         <!-- Interests-->
         {# {%include 'partials/interests.njk'%} #}

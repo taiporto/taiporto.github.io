@@ -30,6 +30,9 @@ module.exports = {
         name: "About me",
       },
       {
+        name: "Projects",
+      },
+      {
         name: "Experience",
       },
       {
@@ -37,9 +40,6 @@ module.exports = {
       },
       {
         name: "Skills",
-      },
-      {
-        name: "Projects",
       },
     ],
     experience: [...experience["en-us"]],
@@ -59,6 +59,9 @@ module.exports = {
         name: "Sobre",
       },
       {
+        name: "Projetos",
+      },
+      {
         name: "Experiência",
       },
       {
@@ -66,9 +69,6 @@ module.exports = {
       },
       {
         name: "Stack",
-      },
-      {
-        name: "Projetos",
       },
     ],
     experience: [...experience["pt-br"]],
