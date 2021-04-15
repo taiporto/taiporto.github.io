@@ -38,7 +38,7 @@ module.exports = {
       title: "Estagiária de Experiência do cliente",
       place: "Naturgy Brasil",
       description:
-        "- Atualizações de layout e criação de funcionalidades para a central de ajuda interna e para o portal de auto atendimento Minha Naturgy;\n- Análise de resultados de pesquisas de satisfação e métricas de uso disponibilizadas através do Google Analytics;\n- Planejamento e montagem de layouts de e-mail marketing;\n- Desenvolvimento e aplicação de pesquisas de satisfação.",
+        "- Design e implementação do menu de navegação do portal de auto atendimento Minha Naturgy;\n- Atualizações de layout e criação de funcionalidades para a central de ajuda interna e para o Minha Naturgy;\n- Redação de texto e mudanças de layout visando melhoria de SEO e usabilidade;\n- Análise de métricas de uso com Google Analytics e Google Data Studio;\n- Desenvolvimento, aplicação e análise de resultados de pesquisas de satisfação.",
       period: "Jan 2020 - Atualmente",
       media: [
         {
