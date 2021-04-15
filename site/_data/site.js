@@ -16,6 +16,7 @@ module.exports = {
   style_src: "../public/css/style.css",
   img_path: `${imgPath}`,
   metaImage: `${imgPath}metaimg.png`,
+  favicon: `${imgPath}favicon.ico`,
   js_src: "/js/script.js",
   skills: [...skills],
 

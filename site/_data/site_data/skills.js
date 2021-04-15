@@ -4,22 +4,19 @@ module.exports = [
     skills: [
       {
         name: "HTML5",
-        years_of_experience: 3,
         icon: "fab fa-html5",
         icon_type: "fa"
       },
       {
         name: "Nunjucks",
-        years_of_experience: 1,
         icon: "skill_icons/njk.svg",
         icon_type: "svg"
       },
       {
         name: "Zendesk Curlybars",
-        years_of_experience: 1,
         icon: "skill_icons/zdsk_curlybars.svg",
         icon_type: "svg"
-      },
+      }
     ],
   },
   {
@@ -27,13 +24,11 @@ module.exports = [
     skills: [
       {
         name: "CSS3",
-        years_of_experience: 3,
         icon: "fab fa-css3-alt",
         icon_type: "fa"
       },
       {
         name: "Sass",
-        years_of_experience: 3,
         icon: "fab fa-sass",
         icon_type: "fa"
       },
@@ -44,19 +39,16 @@ module.exports = [
     skills: [
       {
         name: "Javascript",
-        years_of_experience: 3,
         icon: "fab fa-js",
         icon_type: "fa"
       },
       {
         name: "Node.js",
-        years_of_experience: 3,
         icon: "fab fa-node-js",
         icon_type: "fa"
       },
       {
         name: "Python",
-        years_of_experience: 3,
         icon: "fab fa-python",
         icon_type: "fa"
       },
@@ -67,10 +59,24 @@ module.exports = [
     skills: [
       {
         name: "Figma",
-        years_of_experience: 3,
         icon: "fab fa-figma",
         icon_type: "fa"
       },
+    ],
+  },
+  {
+    name: "CMS",
+    skills: [
+      {
+        name: "Wordpress",
+        icon: "fab fa-wordpress",
+        icon_type: "fa"
+      },
+      {
+        name: "Wix",
+        icon: "fab fa-wix",
+        icon_type: "fa"
+      }
     ],
   },
 ]
