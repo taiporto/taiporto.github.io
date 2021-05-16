@@ -13,6 +13,12 @@ section.resume-section {
   .resume-section-content {
     width: 100%;
   }
+
+  &--experience{
+    .description p{
+      margin-bottom: .5rem !important;
+    }
+  }
 }
 
 .about-section {
