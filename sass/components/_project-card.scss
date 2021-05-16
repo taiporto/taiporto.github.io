@@ -50,6 +50,11 @@
       color: $white;
       flex-direction: column;
     }
+
+    .card__project-tags{
+      bottom: 0;
+    }
+
   }
 
   @include media-breakpoint-down(md){

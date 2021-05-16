@@ -19,6 +19,11 @@
                         </a>
                     {%endfor%}
                 </div>
+                <div class="project-tags py-2 d-flex flex-row flex-wrap justify-content-center">
+                  {%for tag in project.tags%}
+                    <div class="project-tag m-1 px-3 {{tag.color}}">{{tag.name}}</div>
+                  {% endfor %}
+                </div>
                 <div class="project-img">
                     <img src="{{site.img_path}}{{project.img}}" alt="">
                 </div>

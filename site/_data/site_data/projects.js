@@ -1,13 +1,41 @@
 const projectsImgsPath = "projects/";
 
-const imgPaths = {
-  calculaeco: `${projectsImgsPath}calcula-eco.png`,
-  bandejaoBot: `${projectsImgsPath}bandejaobot.png`,
-  dailyPokemon: `${projectsImgsPath}dailyPokemon.jpg`
+const tags = {
+  personal:{
+    name: "Personal",
+    color: "indigo"
+  },
+  professional:{
+    name: "Professional",
+    color: "red"
+  },
+  javascript:{
+    name: "Javascript",
+    color: "yellow"
+  },
+  nodejs:{
+    name: "Node.js",
+    color: "green"
+  },
+  react:{
+    name: "React.js",
+    color: "cyan"
+  },
+  python:{
+    name: "Python",
+    color: "pink"
+  },
+  twitterapi:{
+    name: "TwitterAPI",
+    color: "blue"
+  }
 }
 
-const links = {
-  calculaecoLinks: [
+const calculaEcoBasics = {
+  img: `${projectsImgsPath}calcula-eco.png`,
+  name: "CalculaECO",
+  tags:[tags.javascript, tags.nodejs, tags.personal],
+  links:[
     {
       type: "Github",
       url: 'https://github.com/liaporto/calcula-eco',
@@ -17,9 +45,14 @@ const links = {
       type: "Site/Perfil",
       url:'http://calcula-eco.herokuapp.com/',
       icon: "fas fa-desktop"
-    },  
-  ],
-  bandejaobotLinks: [
+    }],
+}
+
+const bandejaoBotBasics = {
+  img: `${projectsImgsPath}bandejaobot.png`,
+  name: "BandejãoBot UFRJ",
+  tags:[tags.python, tags.twitterapi, tags.personal],
+  links:[
     {
       type: "Github",
       url: 'https://github.com/liaporto/bandejaobot-ufrj',
@@ -31,7 +64,13 @@ const links = {
       icon: "fas fa-desktop"
     },
   ],
-  dailyPokemonLinks: [
+}
+
+const dailyPokemonBasics = {
+  img: `${projectsImgsPath}dailyPokemon.jpg`,
+  name: "Daily Pokémon",
+  tags: [tags.javascript, tags.react, tags.personal],
+  links: [
     {
       type: "Github",
       url: 'https://github.com/liaporto/daily-pokemon',
@@ -42,60 +81,48 @@ const links = {
       url:'https://liaporto.github.io/daily-pokemon',
       icon: "fas fa-desktop"
     },
-  ]
+  ],
 }
 
 module.exports = {
-  "en-us": [
-    {
-      id: "calculaeco_en",
-      img: imgPaths.calculaeco,
-      name: "CalculaECO",
-      links: links.calculaecoLinks,
-      short_description:
-        "CalculaECO is a GPA calculation tool built specifically for UFRJ's Communication majors.",
-    },
-    {
-      id: "bandejaobot_en",
-      img: imgPaths.bandejaoBot,
-      name: "BandejãoBot UFRJ",
-      links: links.bandejaobotLinks,
-      short_description:
-        "BandejãoBot UFRJ is a Twitter bot and it posts UFRJ's cafeteria menu daily at 9AM.",
-    },
-    {
-      id: "dailyPokemon_en",
-      img: imgPaths.dailyPokemon,
-      name: "Daily Pokémon",
-      links: links.dailyPokemonLinks,
-      short_description:
-        "Discover who's the daily Pokémon and who's your birthday Pokémon.",
-    },
-  ],
   "pt-br": [
     {
       id: "calculaeco_pt",
-      img: imgPaths.calculaeco,
-      name: "CalculaECO",
-      links: links.calculaecoLinks,
+      ...calculaEcoBasics,
       short_description:
         "Ferramenta de cálculo de C.R para a Escola de Comunicação da UFRJ.",
     },
     {
       id: "bandejaobot_pt",
-      img: imgPaths.bandejaoBot,
-      name: "BandejãoBot UFRJ",
-      links: links.bandejaobotLinks,
+      ...bandejaoBotBasics,
       short_description:
         "Bot de Twitter que publica o cardápio dos RUs da UFRJ todos os dias às 9h.",
     },
     {
-      id: "dailyPokemon_en",
-      img: imgPaths.dailyPokemon,
-      name: "Daily Pokémon",
-      links: links.dailyPokemonLinks,
+      id: "dailyPokemon_pt",
+      ...dailyPokemonBasics,
       short_description:
         "Descubra o Pokémon diário e o Pokémon do seu aniversário.",
+    },
+  ],
+  "en-us": [
+    {
+      id: "calculaeco_en",
+      ...calculaEcoBasics,
+      short_description:
+        "CalculaECO is a GPA calculation tool built specifically for UFRJ's Communication majors.",
+    },
+    {
+      id: "bandejaobot_en",
+      ...bandejaoBotBasics,
+      short_description:
+        "BandejãoBot UFRJ is a Twitter bot and it posts UFRJ's cafeteria menu daily at 9AM.",
+    },
+    {
+      id: "dailyPokemon_en",
+      ...dailyPokemonBasics,
+      short_description:
+        "Discover who's the daily Pokémon and who's your birthday Pokémon.",
     },
   ],
 }
