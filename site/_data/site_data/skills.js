@@ -3,6 +3,11 @@ module.exports = [
     name: "Layout",
     skills: [
       {
+        name: "React.js",
+        icon: "fab fa-react",
+        icon_type: "fa"
+      },
+      {
         name: "HTML5",
         icon: "fab fa-html5",
         icon_type: "fa"
