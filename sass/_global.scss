@@ -69,7 +69,10 @@ footer{
 }
 
 @media(min-width: 1800px){
-  body, p.lead{
+  body{
+    font-size: 1.05rem !important;
+  }
+  p.lead{
     font-size: 1.15rem !important;
   }
 }
