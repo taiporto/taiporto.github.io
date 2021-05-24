@@ -8,7 +8,7 @@ module.exports = {
       title: "Customer Experience Intern",
       place: "Naturgy Brasil",
       description:
-        "- Development of layout changes and new functionalities for the Zendesk-based help center 'Minha Naturgy' using results from customer satisfaction surveys and Google Analytics data as reference;\n- E-marketing layout development;\n- Development and analysis of customer satisfaction surveys.",
+        "- Study and proposal of changes in layout and new functionalities for the Zendesk-based help center 'Minha Naturgy' targeting a better customer experience;\n- E-marketing layout development;\n- Analysis of customer satisfaction surveys.",
       period: "Jan 2020 - Present",
       media: [
         {
