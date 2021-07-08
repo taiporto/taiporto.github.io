@@ -9,7 +9,7 @@ module.exports = {
       place: "Naturgy Brasil",
       description:
         "- Study and proposal of changes in layout and new functionalities for the Zendesk-based help center 'Minha Naturgy' targeting a better customer experience;\n- E-marketing layout development;\n- Analysis of customer satisfaction surveys.",
-      period: "Jan 2020 - Present",
+      period: "Jan 2020 - Jul 2021",
       media: [
         {
           link: "https://www.minhanaturgy.com.br",
@@ -39,7 +39,7 @@ module.exports = {
       place: "Naturgy Brasil",
       description:
         "- Design e implementação de menu de navegação para o portal Minha Naturgy;\n- Atualizações de layout e criação de funcionalidades para as centrais de ajuda internas e externas;\n- Redação de texto e mudanças de layout visando melhorias de SEO e usabilidade;\n- Análise de métricas de uso com Google Analytics e Google Data Studio;\n- Desenvolvimento, aplicação e análise de resultados de pesquisas de satisfação.",
-      period: "Jan 2020 - Atualmente",
+      period: "Jan 2020 - Jul 2021",
       media: [
 
         {
