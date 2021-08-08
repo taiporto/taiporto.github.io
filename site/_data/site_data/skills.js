@@ -48,6 +48,11 @@ module.exports = [
         icon_type: "fa"
       },
       {
+        name: "React Native",
+        icon: "fab fa-react",
+        icon_type: "fa"
+      },
+      {
         name: "Node.js",
         icon: "fab fa-node-js",
         icon_type: "fa"
