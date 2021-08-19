@@ -4,8 +4,8 @@ module.exports = {
   "en-us": [
     {
       name: "Federal University of Rio de Janeiro",
-      title: "B.A in Communications - Publishing",
-      info: "Bachelor Degree in Communications with a focus on Publishing, currently on fifth semester.",
+      title: "B.A in Communications - Book Publishing",
+      info: "Bachelor Degree in Communications with a focus on Book Publishing, currently on fifth semester.",
       gpa: "GPA: " + ((cra * 4) / 10).toFixed(2),
       period: "Mar 2019 - Present",
     },
