@@ -43,8 +43,6 @@
     </head>
 
     <body id="page-top">
-        <!-- SVG Filters -->
-        {%include "svg_filters/purple-svg-filter.njk"%}
 
         <!-- Main Content -->
         {% block home_page %}
@@ -66,6 +64,9 @@
 
         <!-- Focusable plugin jQuery-->
         <script src="{{site.jquery_src}}"></script>
+
+        <!-- Muuri -->
+        <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
 
         <!-- Core theme JS-->
         <script src="{{site.js_src}}"></script>

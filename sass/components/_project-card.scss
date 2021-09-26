@@ -1,64 +1,54 @@
 .link-card {
-  text-align: center;
+  width: 32%;
   padding: 0;
-  border-radius: 0;
-  border: 0;
 
-  .card-content-wrapper {
+  text-align: center;
+
+  overflow: hidden;
+
+  border: 1px solid $secondary;
+  border-radius: 0;
+  box-shadow: 0px 2px 5px 1px rgba(darken($primary, 20%), 0.2);
+
+  // transition: all ease-out 0.2s;
+
+  .link-card__img-container{
     width: 100%;
-    max-height: 320px;
-    margin: 0;
-    padding: 0;
-    border: 0.15em solid $primary;
-    transition: all ease-out 0.2s;
+    height: 100%;
   }
 
-  .card-img {
+  .link-card__img {
     position: relative;
-    width: inherit;
-    border-radius: inherit;
+    width: 102%;
+    transform: scale(1.01);
+    object-fit: cover;
+
+    filter: blur(1px);
+  }
+
+  .link-card__card-info {
+    width: 100%;
+    height: 100%;
+    padding: 2em 2em;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    color: $white;
+    background-color: rgba(darken($primary, 50%),.5);
   }
 
   .card-title {
     color: $white;
   }
 
-  &--general{
-    @extend .link-card;
-
-    .card-title{
-      margin: auto;
-    }
-
-    @include media-breakpoint-down(md){
-      .card-img-overlay{
-        display: none;
-      }
-    }
-  }
-
-  &--project{
-    @extend .link-card;
-
-    .card-img {
-      filter: brightness(0.8);
-      transition: all ease-in 0.2s;
-    }
-  
-    .card-img-overlay {
-      padding: 1em 2em 1em 2em;
-      color: $white;
-      flex-direction: column;
-    }
-
-    .card__project-tags{
-      bottom: 0;
-    }
-
-  }
-
   @include media-breakpoint-down(md){
-    .card-img-overlay {
+    .link-card__card-info {
       margin: auto;
     }
     .card-text{
@@ -80,35 +70,23 @@
     .card-title{
       font-size: 1.5em;
     }
-
-    .card-text{
-      display: none;
-    }
-
-    .card-img{
-      filter: none;
-    }
     
-    .card-img-overlay{
-      animation: go-out 0.3s;
-      animation-fill-mode: forwards;
+    // .card-text{
+      //   display: none;
+      // }
+    
+    .link-card__card-info{
+      // animation: go-out 0.3s;
+      // animation-fill-mode: forwards;
     }
 
     &:hover, &:focus {
-      .card-content-wrapper {
-        transform: scale(1.025);
-        border-color: lighten($primary, 20%);
-        box-shadow: 0px 2px 5px 1px rgba(darken($primary, 20%), 0.2);
-      }
-      .card-img {
-        transform: scale(1.01);
-        filter: url(#purple-filter) brightness(0.5);
-      }
-      
-      .card-img-overlay {
-        display: flex;
-        animation: go-up 0.3s;
-        animation-fill-mode: forwards;
+      border-width: 1.2px;
+      border-color: lighten($primary, 20%);
+      box-shadow: 0px 2px 5px 2px rgba(darken($primary, 20%), 0.2);
+
+      .link-card__img{
+        transform: scale(1.1);
       }
     }
   }
@@ -136,4 +114,73 @@
     }
   }
 
+}
+
+.link-card--general{
+  .card-title{
+    margin: auto;
+  }
+
+  @include media-breakpoint-down(md){
+    .link-card__card-info{
+      display: none;
+    }
+  }
+}
+
+.link-card--project{
+  width: 30%;
+  position: absolute;
+  margin: 0 .5rem;
+
+  .link-card__img {
+    transition: all ease-in 0.2s;
+  }
+
+  .card__project-tags{
+    bottom: 0;
+  }
+
+  .project-tag{
+    padding: 0.2rem .5rem;
+    font-size: 0.7rem;
+    border-radius: 50rem !important;
+  
+    &.purple{
+      color: $white;
+      background-color: $purple;
+    }
+    &.orange{
+      color: $white;
+      background-color: $orange;
+    }
+    &.dark-orange{
+      color: $white;
+      background-color: $dark-orange;
+    }
+    &.green{
+      color: $white;
+      background-color: $green;
+    }
+    &.yellow{
+      color: $gray-800;
+      background-color: $yellow;
+    }
+    &.cyan{
+      color: $white;
+      background-color: $cyan;
+    }
+    &.blue{
+      color: $white;
+      background-color: $blue;
+    }
+    &.indigo{
+      color: $white;
+      background-color: $indigo;
+    }
+    &.pink{
+      color: $white;
+      background-color: $pink;
+    }
+  }
 }

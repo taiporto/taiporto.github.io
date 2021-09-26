@@ -1,88 +1,89 @@
 const projectsImgsPath = "projects/";
 
 const tags = {
-  personal:{
+  personal: {
     name: "Personal",
-    color: "indigo"
+    color: "indigo",
   },
-  professional:{
+  professional: {
     name: "Professional",
-    color: "red"
+    color: "red",
   },
-  javascript:{
+  javascript: {
     name: "Javascript",
-    color: "yellow"
+    color: "yellow",
   },
-  nodejs:{
+  nodejs: {
     name: "Node.js",
-    color: "green"
+    color: "green",
   },
-  react:{
+  react: {
     name: "React.js",
-    color: "cyan"
+    color: "cyan",
   },
-  python:{
+  python: {
     name: "Python",
-    color: "pink"
+    color: "pink",
   },
-  twitterapi:{
+  twitterapi: {
     name: "TwitterAPI",
-    color: "blue"
-  }
-}
+    color: "blue",
+  },
+};
 
 const calculaEcoBasics = {
   img: `${projectsImgsPath}calcula-eco.png`,
   name: "CalculaECO",
-  tags:[tags.javascript, tags.nodejs, tags.personal],
-  links:[
+  tags: [tags.personal, tags.javascript, tags.nodejs],
+  links: [
     {
       type: "Github",
-      url: 'https://github.com/liaporto/calcula-eco',
-      icon: "fab fa-github"
+      url: "https://github.com/liaporto/calcula-eco",
+      icon: "fab fa-github",
     },
     {
       type: "Site/Perfil",
-      url:'http://calcula-eco.herokuapp.com/',
-      icon: "fas fa-desktop"
-    }],
-}
+      url: "http://calcula-eco.herokuapp.com/",
+      icon: "fas fa-desktop",
+    },
+  ],
+};
 
 const bandejaoBotBasics = {
   img: `${projectsImgsPath}bandejaobot.png`,
   name: "BandejãoBot UFRJ",
-  tags:[tags.python, tags.twitterapi, tags.personal],
-  links:[
+  tags: [tags.personal, tags.python, tags.twitterapi],
+  links: [
     {
       type: "Github",
-      url: 'https://github.com/liaporto/bandejaobot-ufrj',
-      icon: "fab fa-github"
+      url: "https://github.com/liaporto/bandejaobot-ufrj",
+      icon: "fab fa-github",
     },
     {
       type: "Site/Perfil",
-      url:'https://twitter.com/bandejaobotufrj',
-      icon: "fas fa-desktop"
+      url: "https://twitter.com/bandejaobotufrj",
+      icon: "fas fa-desktop",
     },
   ],
-}
+};
 
 const dailyPokemonBasics = {
   img: `${projectsImgsPath}dailyPokemon.jpg`,
   name: "Daily Pokémon",
-  tags: [tags.javascript, tags.react, tags.personal],
+  tags: [tags.personal, tags.javascript, tags.react],
   links: [
     {
       type: "Github",
-      url: 'https://github.com/liaporto/daily-pokemon',
-      icon: "fab fa-github"
+      url: "https://github.com/liaporto/daily-pokemon",
+      icon: "fab fa-github",
     },
     {
       type: "Site/Perfil",
-      url:'https://liaporto.github.io/daily-pokemon',
-      icon: "fas fa-desktop"
+      url: "https://liaporto.github.io/daily-pokemon",
+      icon: "fas fa-desktop",
     },
   ],
-}
+};
 
 module.exports = {
   "pt-br": [
@@ -125,4 +126,4 @@ module.exports = {
         "Discover who's the daily Pokémon and who's your birthday Pokémon.",
     },
   ],
-}
+};

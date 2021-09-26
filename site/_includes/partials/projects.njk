@@ -1,24 +1,28 @@
 <section tabindex="0" class="resume-section" id="{{locale.topics[1].name | slug}}">
     <div class="resume-section-content">
         <h2 class="mb-5">{{locale.topics[1].name}}</h2>
-        <div class="container container-fluid card-container mx-auto row justify-content-center">
+        <div class="grid-filters">
+            <a href="#" class="grid-filter">Javascript</a>
+            <a href="#" class="grid-filter">Clear</a>
+        </div>
+        <div class="container container-fluid card-container muuri-grid position-relative mx-auto row">
             {% for project in locale.projects %}
-                <a class="card link-card--project mb-5 col-md-4 mx-2 col-lg-4 mb-lg-3 mx-lg-2" tabindex="0" alt="{{project.name}}" aria-label="{{project.name}}" data-toggle="modal" data-target="#{{project.id}}-modal" href="">
-                    <div class="card-content-wrapper position-relative">
-                        <img class="card-img" src="{{site.img_path}}{{project.img}}">
-                        <div class="card-img-overlay">
+                <a class="link-card link-card--project mb-5 mb-lg-3" tabindex="0" alt="{{project.name}}" aria-label="{{project.name}}" data-toggle="modal" data-target="#{{project.id}}-modal" href="">
+                        <img class="link-card__img" src="{{site.img_path}}{{project.img}}">
+                        <div class="link-card__card-info card-info">
                             <h3 class="card-title card-front-title text-center">{{project.name}}</h3>
-                            <p class="card-text">{{project.short_description}}</p>
+                            {# <p class="card-text">{{project.short_description}}</p> #}
                         </div>
                         <div class="card__project-tags position-absolute p-2 d-flex flex-row flex-wrap">
                           {%for tag in project.tags%}
-                            <div class="project-tag m-1 px-3 {{tag.color}}">{{tag.name}}</div>
+                            <div class="project-tag m-1 {{tag.color}}" data-tag-name="{{tag.name}}">{{tag.name}}</div>
                           {% endfor %}
                         </div>
-                    </div>
                 </a>
-                {%include 'partials/project_modal.njk'%}
             {% endfor %}
         </div>
+        {% for project in locale.projects %}
+            {%include 'partials/project_modal.njk'%}
+        {% endfor %}
     </div>
 </section>

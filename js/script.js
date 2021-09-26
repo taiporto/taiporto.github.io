@@ -4,49 +4,78 @@
 function toggleLanguage() {
   switch (window.location.pathname) {
     case "/pt-br/":
-      return window.location = "/en-us";
+      return (window.location = "/en-us");
 
     case "/en/":
-      return window.location = "/pt-br";
+      return (window.location = "/pt-br");
 
     default:
-      return window.location = "/pt-br";
+      return (window.location = "/pt-br");
   }
-} 
+}
 
 //On document ready
-;(function ($) {
-  var screenSize = window.innerWidth, scrollOffset;
+(function ($) {
+  var screenSize = window.innerWidth,
+    scrollOffset;
 
-  if(screenSize <= 992){
+  if (screenSize <= 992) {
     scrollOffset = 60;
-  } else if(screenSize < 1800){
+  } else if (screenSize < 1800) {
     scrollOffset = 40;
   } else {
     scrollOffset = 35;
   }
 
-  
+  // Activate Muuri
+  var grid = new Muuri(".muuri-grid", {
+    items: ".link-card",
+  });
+
+  //Configure Muuri filters
+  $(".grid-filter").click((e) => {
+    e.preventDefault();
+    const filterName = e.target.innerHTML.toLowerCase();
+
+    grid.filter((item) => {
+      const projectTags = $(item.getElement())
+        .find(".project-tag")
+        .attr("data-tag-name")
+        .toLowerCase();
+
+      if (filterName === "clear") {
+        return true;
+      } else {
+        return projectTags.includes(filterName);
+      }
+    });
+  });
+
   // Closes responsive menu when user clicks outside of it
   $(document).click(function (e) {
-    if ($(".navbar-collapse").hasClass("show") && !$(e.target).hasClass("navbar-collapse") && !$(e.target).parents().hasClass("navbar-collapse")) {
+    if (
+      $(".navbar-collapse").hasClass("show") &&
+      !$(e.target).hasClass("navbar-collapse") &&
+      !$(e.target).parents().hasClass("navbar-collapse")
+    ) {
       $("#navbarSupportedContent").collapse("hide");
     }
   });
-  $('#navbarSupportedContent').on('show.bs.collapse', function () {
+
+  $("#navbarSupportedContent").on("show.bs.collapse", function () {
     $(".hamburger").addClass("is-active");
   });
-  $('#navbarSupportedContent').on('hide.bs.collapse', function () {
+  $("#navbarSupportedContent").on("hide.bs.collapse", function () {
     $(".hamburger").removeClass("is-active");
   });
 
   // Only shows menu items after hamburger menu is open
-  if(screenSize <= 992){
+  if (screenSize <= 992) {
     $(".navbar-nav").css("opacity", "0");
-    $('#navbarSupportedContent').on('shown.bs.collapse', function () {
+    $("#navbarSupportedContent").on("shown.bs.collapse", function () {
       $(".navbar-nav").css("opacity", "1");
     });
-    $('#navbarSupportedContent').on('hide.bs.collapse', function () {
+    $("#navbarSupportedContent").on("hide.bs.collapse", function () {
       $(".navbar-nav").css("opacity", "0");
     });
   }
@@ -57,24 +86,34 @@ function toggleLanguage() {
    * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
    */
   // Smooth scrolling using jQuery easing
-
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function (e) {
-    if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+    if (
+      location.pathname.replace(/^\//, "") ==
+        this.pathname.replace(/^\//, "") &&
+      location.hostname == this.hostname
+    ) {
       var target = $(this.hash);
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
 
-      if ($(e.target).hasClass("back-to-top") || $(e.target).parents().hasClass("back-to-top")) {
+      if (
+        $(e.target).hasClass("back-to-top") ||
+        $(e.target).parents().hasClass("back-to-top")
+      ) {
         scrollOffset = 70;
       }
 
       if (target.length) {
-        $("html, body").animate({
-          scrollTop: target.offset().top - scrollOffset
-        }, 800, function () {
-          if(screenSize > 992){
-            $(target).focus();
+        $("html, body").animate(
+          {
+            scrollTop: target.offset().top - scrollOffset,
+          },
+          800,
+          function () {
+            if (screenSize > 992) {
+              $(target).focus();
+            }
           }
-        });
+        );
         return false;
       }
     }
@@ -86,6 +125,6 @@ function toggleLanguage() {
 
   $("body").scrollspy({
     target: "#topNav",
-    offset: scrollOffset + 5
+    offset: scrollOffset + 5,
   });
 })(jQuery);
