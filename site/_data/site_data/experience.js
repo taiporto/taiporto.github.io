@@ -1,22 +1,28 @@
-const experienceLinksImgPath = "other_links/";
-const siacImgPath = `${experienceLinksImgPath}siac.jpg`;
-const naturgyImgPath = `${experienceLinksImgPath}naturgy.jpg`;
+const experienceLinksImgPath = "other_links/"
+const siacImgPath = `${experienceLinksImgPath}siac.jpg`
+const naturgyImgPath = `${experienceLinksImgPath}naturgy.jpg`
 
 module.exports = {
   "en-us": [
     {
+      title: "Front-End Developer",
+      place: "EJCM",
+      description: "",
+      period: "Aug 2021 - Present",
+    },
+    {
       title: "Customer Experience Intern",
       place: "Naturgy Brasil",
       description:
-        "- Development of layout changes and new functionalities for the Zendesk-based help center 'Minha Naturgy' using results from customer satisfaction surveys and Google Analytics data as reference;\n- E-marketing layout development;\n- Development and analysis of customer satisfaction surveys.",
-      period: "Jan 2020 - Present",
+        "- Study and proposal of changes in layout and new functionalities for the Zendesk-based help center 'Minha Naturgy' targeting a better customer experience;\n- E-marketing layout development;\n- Analysis of customer satisfaction surveys.",
+      period: "Jan 2020 - Jul 2021",
       media: [
         {
           link: "https://www.minhanaturgy.com.br",
           title: "Minha Naturgy",
           img: naturgyImgPath,
-        }
-      ]
+        },
+      ],
     },
     {
       title: "Extensionist",
@@ -35,18 +41,24 @@ module.exports = {
   ],
   "pt-br": [
     {
+      title: "Desenvolvedora Front-End",
+      place: "EJCM",
+      description: "",
+      period: "Ago 2021 - Atualmente",
+    },
+    {
       title: "Estagiária de Experiência do cliente",
       place: "Naturgy Brasil",
       description:
-        "- Design e implementação do menu de navegação do portal de auto atendimento Minha Naturgy;\n- Atualizações de layout e criação de funcionalidades para a central de ajuda interna e para o Minha Naturgy;\n- Redação de texto e mudanças de layout visando melhoria de SEO e usabilidade;\n- Análise de métricas de uso com Google Analytics e Google Data Studio;\n- Desenvolvimento, aplicação e análise de resultados de pesquisas de satisfação.",
-      period: "Jan 2020 - Atualmente",
+        "- Design e implementação de menu de navegação para o portal Minha Naturgy;\n- Atualizações de layout e criação de funcionalidades para as centrais de ajuda internas e externas;\n- Redação de texto e mudanças de layout visando melhorias de SEO e usabilidade;\n- Análise de métricas de uso com Google Analytics e Google Data Studio;\n- Desenvolvimento, aplicação e análise de resultados de pesquisas de satisfação.",
+      period: "Jan 2020 - Jul 2021",
       media: [
         {
           link: "https://www.minhanaturgy.com.br",
           title: "Minha Naturgy",
           img: naturgyImgPath,
-        }
-      ]
+        },
+      ],
     },
     {
       title: "Bolsista de desenvolvimento web",

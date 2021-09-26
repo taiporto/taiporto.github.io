@@ -1,28 +1,30 @@
 // Styling for the development technology icons
 .master-skills-list {
   color: $primary;
-  text-align: center;
+}
 
-  .category-card {
+.category-card__skill-list{
+  width: 80%;
+  padding-left: 0;
+  list-style-type: none;
 
-    &--skills-list {
-      padding-left: 0px;
-      list-style-type: none;
-      .skill-icon {
-        font-size: 2rem;
-      }
-      .skill-name-container p{
-        margin-right: 5px;
-        margin-left: 5px;
+  .category-card__skill {
+    margin: 10% auto;
+    width: 80%;
+
+    .skill-icon {
+      font-size: 2rem;
+
+      &__img {
+        @extend .skill-icon;
+        width: 32px;
+        height: auto;
       }
     }
-  }
 
-  .skill-icon {
-    &--img {
-      @extend .skill-icon;
-      width: 32px;
-      height: auto;
+    .skill-name{
+      margin: auto 0 auto 2%;
+      white-space: nowrap;
     }
   }
 }
@@ -33,19 +35,23 @@
     margin-bottom: 20px;
     font-size: 1.4em;
 
-    &--skills-list {
+    &__skill-list {
       width: 80%;
       text-align: left;
     }
 
-    .skill-icon img {
-      width: 100%;
-    }
-
-    &--skill-container {
-      margin: 0 10%;
+    &__skill {
+      margin: 10%;
       width: 80%;
       text-align: center;
+      
+      .skill-icon img {
+        width: 100%;
+      }
+
+      .skill-name{
+        white-space: normal;
+      }
     }
   }
 }

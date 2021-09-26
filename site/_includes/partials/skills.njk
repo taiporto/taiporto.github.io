@@ -4,25 +4,21 @@
         <div class="master-skills-list row justify-content-center">
 
         {% for category in site.skills | orderSkillsMoreFirst %}
-                <div class="col-lg-4 col-xl-3 category-card d-flex flex-column align-items-center">
+                <div class="category-card col-lg-4 col-xl-3 d-flex flex-column align-items-center">
                     <h3>{{category.name}}</h3>
                     
-                    <ul class="category-card--skills-list">
+                    <ul class="category-card__skill-list">
                         {% for skill in category.skills %}
-                            <li>
-                                <div class="category-card--skill-container row">
-                                    {% if skill.icon_type === "fa"%}
-                                    <i class="{{skill.icon}} skill-icon col-3 px-1 p-md-0"></i>
-                                    {%endif%}
-                                    {% if skill.icon_type === "svg"%}
-                                    <div class="skill-icon-container col-3 px-1 p-md-0 text-center">
-                                        <img src="{{site.img_path}}{{skill.icon}}" class="skill-icon--img"></img>
-                                    </div>
-                                    {%endif%}
-                                    <div class="skill-name-container col-9 p-0">
-                                        <p>{{skill.name}}</p>
-                                    </div>
+                            <li class="category-card__skill row">
+                                {% if skill.icon_type === "fa"%}
+                                <i class="{{skill.icon}} skill-icon col-3 px-1 p-md-0"></i>
+                                {%endif%}
+                                {% if skill.icon_type === "svg"%}
+                                <div class="skill-icon col-3 px-1 p-md-0 text-center">
+                                    <img src="{{site.img_path}}{{skill.icon}}" class="skill-icon__img"/>
                                 </div>
+                                {%endif%}
+                                <span class="skill-name p-0">{{skill.name}}</span>
                             </li>
                         {% endfor %}
                     </ul>

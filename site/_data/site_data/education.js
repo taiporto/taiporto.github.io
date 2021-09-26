@@ -4,10 +4,10 @@ module.exports = {
   "en-us": [
     {
       name: "Federal University of Rio de Janeiro",
-      title: "B.A in Communications - Editorial Production",
-      info: "Bachelor Degree in Communications - Editorial Production, currently on fourth semester.",
+      title: "B.A in Communications - Book Publishing",
+      info: "Bachelor Degree in Communications with a focus on Book Publishing, currently on fifth semester.",
       gpa: "GPA: " + ((cra * 4) / 10).toFixed(2),
-      period: "Mar 2019 - Atualmente",
+      period: "Mar 2019 - Present",
     },
     {
       name: "Colégio Pedro II",
@@ -19,7 +19,7 @@ module.exports = {
     {
       name: "Universidade Federal do Rio de Janeiro",
       title: "Bacharelado em Comunicação Social - Produção Editorial",
-      info: "Bacharelado em Comunicação Social com habilitação em Produção Editorial. Atualmente no 4º período.",
+      info: "Bacharelado em Comunicação Social com habilitação em Produção Editorial. Atualmente no 5º período.",
       gpa: `C.R.A ${cra}`,
       period: "Mar 2019 - Atualmente",
     },
