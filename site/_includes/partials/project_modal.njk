@@ -11,7 +11,7 @@
                 <h2>{{project.name}}</h2>
                 <div class="social-icons project-links d-flex justify-content-center">
                     {%for link in project.links%}
-                        <a class="d-flex align-items-center" href="{{link.url}}" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
+                        <a class="project-link d-flex align-items-center" href="{{link.url}}" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
                             <div class="social-icon mr-2 mr-lg-1">
                                 <i class="{{link.icon}}"></i>
                             </div>
@@ -24,11 +24,11 @@
                     <div class="project-tag m-1 px-3 {{tag.color}}">{{tag.name}}</div>
                   {% endfor %}
                 </div>
-                <div class="project-img">
-                    <img src="{{site.img_path}}{{project.img}}" alt="">
-                </div>
                 <div class="project-description text-center pt-3">
                     {{project.short_description}}
+                </div>
+                <div class="project-img">
+                    <img src="{{site.img_path}}{{project.img}}" alt="">
                 </div>
                 {% set snippet %}{% include '../../_data/projects_articles/' + project.id + '.md' %}{% endset %}
                 {{ snippet | markdown | safe }}

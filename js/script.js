@@ -30,25 +30,82 @@ function toggleLanguage() {
   // Activate Muuri
   var grid = new Muuri(".muuri-grid", {
     items: ".link-card",
+    layout: {
+      fillGaps: true,
+    },
   });
 
-  //Configure Muuri filters
-  $(".grid-filter").click((e) => {
-    e.preventDefault();
-    const filterName = e.target.innerHTML.toLowerCase();
-
-    grid.filter((item) => {
-      const projectTags = $(item.getElement())
-        .find(".project-tag")
-        .attr("data-tag-name")
-        .toLowerCase();
-
-      if (filterName === "clear") {
-        return true;
-      } else {
-        return projectTags.includes(filterName);
-      }
+  // Mobile - Only shows menu items after hamburger menu is open
+  if (screenSize <= 992) {
+    $(".navbar-nav").css("opacity", "0");
+    $("#navbarSupportedContent").on("shown.bs.collapse", function () {
+      $(".navbar-nav").css("opacity", "1");
     });
+    $("#navbarSupportedContent").on("hide.bs.collapse", function () {
+      $(".navbar-nav").css("opacity", "0");
+    });
+  }
+
+  //Filtering function
+  function filterProjects() {
+    const checkedTechnologyFilter = (
+      $(".grid-filter[name='tecnologia']:checked").attr("value") || ""
+    ).toLowerCase();
+
+    const checkedCategoryFilter = (
+      $(".grid-filter[name='categoria']:checked").attr("value") || ""
+    ).toLowerCase();
+
+    //Filter que passa por todos os itens da grid de projetos
+    grid.filter((item) => {
+      //Todas as tags do item em um objeto
+      const projectTagsElements = $(item.getElement()).find(".project-tag");
+
+      //Cria um array com o nome de cada tag
+      const projectTags = $.map(projectTagsElements, (element) => {
+        return $(element).attr("data-tag-name").toLowerCase();
+      });
+
+      const filteredTechnologyTags = projectTags.filter((tag) => {
+        if (checkedTechnologyFilter !== "") {
+          return tag === checkedTechnologyFilter;
+        }
+        return true; // Se não houver nenhum filtro marcado retorna todas as tags
+      });
+
+      const filteredCategoryTags = projectTags.filter((tag) => {
+        if (checkedCategoryFilter !== "") {
+          return tag === checkedCategoryFilter;
+        }
+        return true; // Se não houver nenhum filtro marcado retorna todas as tags
+      });
+
+      return filteredTechnologyTags.length && filteredCategoryTags.length; // Se tanto as arrays de tecnologia quanto as de categoria tiverem tags, retorna o item
+    });
+  }
+
+  //Initial filtering
+  filterProjects();
+
+  /** Event listeners */
+  //On filter change
+  $(".grid-filter").click((e) => {
+    $(e.target).attr("checked", true);
+    filterProjects();
+  });
+
+  //Reset filters
+  $(".reset-link").click((e) => {
+    e.preventDefault();
+    const resetType = $(e.target).parent().attr("class");
+
+    if (resetType.includes("tecnologia")) {
+      $(".filter-group--tecnologia .grid-filter").removeAttr("checked");
+    } else if (resetType.includes("categoria")) {
+      $(".filter-group--categoria .grid-filter").removeAttr("checked");
+    }
+
+    filterProjects();
   });
 
   // Closes responsive menu when user clicks outside of it
@@ -68,17 +125,6 @@ function toggleLanguage() {
   $("#navbarSupportedContent").on("hide.bs.collapse", function () {
     $(".hamburger").removeClass("is-active");
   });
-
-  // Only shows menu items after hamburger menu is open
-  if (screenSize <= 992) {
-    $(".navbar-nav").css("opacity", "0");
-    $("#navbarSupportedContent").on("shown.bs.collapse", function () {
-      $(".navbar-nav").css("opacity", "1");
-    });
-    $("#navbarSupportedContent").on("hide.bs.collapse", function () {
-      $(".navbar-nav").css("opacity", "0");
-    });
-  }
 
   /*!
    * Start Bootstrap - Resume v6.0.1 (https://startbootstrap.com/template-overviews/resume)

@@ -1,25 +1,41 @@
 <section tabindex="0" class="resume-section" id="{{locale.topics[1].name | slug}}">
     <div class="resume-section-content">
         <h2 class="mb-5">{{locale.topics[1].name}}</h2>
-        <div class="grid-filters">
-            <a href="#" class="grid-filter">Javascript</a>
-            <a href="#" class="grid-filter">Clear</a>
-        </div>
-        <div class="container container-fluid card-container muuri-grid position-relative mx-auto row">
-            {% for project in locale.projects %}
-                <a class="link-card link-card--project mb-5 mb-lg-3" tabindex="0" alt="{{project.name}}" aria-label="{{project.name}}" data-toggle="modal" data-target="#{{project.id}}-modal" href="">
-                        <img class="link-card__img" src="{{site.img_path}}{{project.img}}">
-                        <div class="link-card__card-info card-info">
-                            <h3 class="card-title card-front-title text-center">{{project.name}}</h3>
-                            {# <p class="card-text">{{project.short_description}}</p> #}
-                        </div>
-                        <div class="card__project-tags position-absolute p-2 d-flex flex-row flex-wrap">
-                          {%for tag in project.tags%}
-                            <div class="project-tag m-1 {{tag.color}}" data-tag-name="{{tag.name}}">{{tag.name}}</div>
-                          {% endfor %}
-                        </div>
-                </a>
-            {% endfor %}
+        <div class="content-container">
+            <div class="filters-container">
+                <h3>Filtros</h3>
+                <form class="grid-filters">
+                    <fieldset class="filter-group filter-group--tecnologia">
+                        <legend>Tecnologia</legend>
+                        <div class="radio-container"><input id="radio-javascript" type="radio" name="tecnologia" value="JavaScript" class="radio-container__input grid-filter"/><label class="radio-container__label yellow" for="radio-javascript">Javascript</label></div>
+                        <div class="radio-container"><input id="radio-python" type="radio" name="tecnologia" value="Python" class="radio-container__input grid-filter"/><label class="radio-container__label pink" for="radio-python">Python</label></div>
+                        <a href="#" class="reset-link">Reset</a>
+                    </fieldset>
+                    <fieldset class="filter-group filter-group--categoria">
+                        <legend>Categoria</legend>
+                        <div class="radio-container"><input id="radio-pessoal" type="radio" name="categoria" value="Pessoal" class="radio-container__input grid-filter"/><label class="radio-container__label indigo" for="radio-pessoal">Pessoal</label></div>
+                        <div class="radio-container"><input id="radio-freelance" type="radio" name="categoria" value="Freelance" class="radio-container__input grid-filter"/><label class="radio-container__label red" for="radio-freelance">Freelance</label></div>
+                        <div class="radio-container"><input id="radio-institucional" type="radio" name="categoria" value="Institucional" class="radio-container__input grid-filter"/><label class="radio-container__label black" for="radio-institucional">Institucional</label></div>
+                        <a href="#" class="reset-link">Reset</a>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="container container-fluid card-container muuri-grid position-relative mx-auto row">
+                {% for project in locale.projects %}
+                    <a class="link-card link-card--project mb-md-5 mb-lg-3" tabindex="0" alt="{{project.name}}" aria-label="{{project.name}}" data-toggle="modal" data-target="#{{project.id}}-modal" href="">
+                            <img class="link-card__img" src="{{site.img_path}}{{project.img}}">
+                            <div class="link-card__card-info card-info">
+                                <h3 class="card-title card-front-title text-center">{{project.name}}</h3>
+                                {# <p class="card-text">{{project.short_description}}</p> #}
+                            </div>
+                            <div class="link-card__project-tags p-x-2 d-flex flex-row">
+                            {%for tag in project.tags%}
+                                <div class="project-tag m-1 {{tag.color}}" data-tag-type="{{tag.type}}" data-tag-name="{{tag.name}}"><span class="d-none d-xl-block">{{tag.name}}</span></div>
+                            {% endfor %}
+                            </div>
+                    </a>
+                {% endfor %}
+            </div>
         </div>
         {% for project in locale.projects %}
             {%include 'partials/project_modal.njk'%}

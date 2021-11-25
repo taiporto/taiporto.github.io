@@ -1,17 +1,30 @@
 const projectsImgsPath = "projects/";
 
 const tags = {
-  personal: {
-    name: "Personal",
+  pessoal: {
+    type: "category",
+    name: "Pessoal",
     color: "indigo",
   },
-  professional: {
-    name: "Professional",
+  freelance: {
+    type: "category",
+    name: "Freelance",
     color: "red",
   },
+  Institucional: {
+    type: "category",
+    name: "Institucional",
+    color: "black",
+  },
   javascript: {
+    type: "technology",
     name: "Javascript",
     color: "yellow",
+  },
+  python: {
+    type: "technology",
+    name: "Python",
+    color: "pink",
   },
   nodejs: {
     name: "Node.js",
@@ -20,10 +33,6 @@ const tags = {
   react: {
     name: "React.js",
     color: "cyan",
-  },
-  python: {
-    name: "Python",
-    color: "pink",
   },
   twitterapi: {
     name: "TwitterAPI",
@@ -34,7 +43,7 @@ const tags = {
 const calculaEcoBasics = {
   img: `${projectsImgsPath}calcula-eco.png`,
   name: "CalculaECO",
-  tags: [tags.personal, tags.javascript, tags.nodejs],
+  tags: [tags.pessoal, tags.javascript, tags.nodejs],
   links: [
     {
       type: "Github",
@@ -52,7 +61,7 @@ const calculaEcoBasics = {
 const bandejaoBotBasics = {
   img: `${projectsImgsPath}bandejaobot.png`,
   name: "BandejãoBot UFRJ",
-  tags: [tags.personal, tags.python, tags.twitterapi],
+  tags: [tags.pessoal, tags.python, tags.twitterapi],
   links: [
     {
       type: "Github",
@@ -70,7 +79,7 @@ const bandejaoBotBasics = {
 const dailyPokemonBasics = {
   img: `${projectsImgsPath}dailyPokemon.jpg`,
   name: "Daily Pokémon",
-  tags: [tags.personal, tags.javascript, tags.react],
+  tags: [tags.pessoal, tags.javascript, tags.react],
   links: [
     {
       type: "Github",
