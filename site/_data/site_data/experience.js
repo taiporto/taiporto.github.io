@@ -5,10 +5,12 @@ const naturgyImgPath = `${experienceLinksImgPath}naturgy.jpg`
 module.exports = {
   "en-us": [
     {
-      title: "Front-End Developer",
+      title: "Front-End Developer | Marketing Consultant",
       place: "EJCM",
       description: "",
       period: "Aug 2021 - Present",
+      description:
+        "- Project development in React.js and React Native;\n- Post design and blog articles writing;\n- Member of the Inclusion & Diversity Initiative.",
     },
     {
       title: "Customer Experience Intern",
@@ -41,10 +43,12 @@ module.exports = {
   ],
   "pt-br": [
     {
-      title: "Desenvolvedora Front-End",
+      title: "Desenvolvedora Front-End | Assessora de Marketing",
       place: "EJCM",
       description: "",
       period: "Ago 2021 - Atualmente",
+      description:
+        "- Desenvolvimento de projetos web em React.js e projetos mobile em React Native;\n- Elaboração de posts para redes sociais, redação de artigos para o blog da empresa e planejamento de conteúdo;\n- Membro da Iniciativa de Diversidade e Inclusão, movimento que visa promover práticas de D&I dentro da empresa;\n- Ideação e design de brindes para o aniversário da empresa.",
     },
     {
       title: "Estagiária de Experiência do cliente",
