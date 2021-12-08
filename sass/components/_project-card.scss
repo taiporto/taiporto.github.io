@@ -32,16 +32,9 @@
     .link-card__card-info {
       margin: auto;
     }
-    .card-text{
-      font-size: 1em;
-    }
   }
   
   @include media-breakpoint-only(md){
-    .card-text{
-      font-size: 1em;
-    }
-
     .card-title{
       font-size: 1.5em;
     }
@@ -59,12 +52,7 @@
 
   @include media-breakpoint-up(xl){
     .card-title{
-      font-size: 1.4em;
-    }
-    
-    .card-text{
-      display: block;
-      font-size: 1rem;
+      font-size: 1.5em;
     }
   }
 
@@ -72,20 +60,15 @@
     .card-title{
       font-size: 2em;
     }
-    .card-text{
-      display: block;
-      font-size: 1em;
-    }
   }
 
 }
 
 .link-card--general{
-  .card-title{
-    margin: auto;
-  }
-
   .link-card__card-info{
+    display: flex;
+    align-items: center;
+
     height: 100%;
     padding: 2em 2em;
 
@@ -94,6 +77,11 @@
     left: 0;
     background-color: rgba(darken($primary, 50%),.5);
   }
+
+  .card-title{
+    margin: auto;
+  }
+
 
   .link-card__img{
     transform: scale(1.01);
@@ -144,7 +132,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  background-color: rgba(darken($primary, 50%),.5);
+  background-color: rgba($secondary,.5);
 
   .link-card__card-info{
     margin-top: 2em;
@@ -174,11 +162,24 @@
  
 
   @include media-breakpoint-down(md){
-    margin: 0 auto .3em;
+    margin: 0 5% 1em;
     width: 90%;
 
+    .link-card__img {
+      filter: url("#purple-filter") blur(0px);
+    }
+
+    .card-title{
+      font-size: 2em;
+    }
+
     .link-card__project-tags{
-      height: 1em;
+      height: 1.2em;
+      
+      .project-tag{
+        width: .8em;
+        box-shadow: 0 0 2px 0 rgba(0,0,0,0.2);
+      }
     }
   }
 

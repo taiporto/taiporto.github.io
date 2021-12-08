@@ -19,7 +19,8 @@
   left: -9999999px;
 }
 
-.radio-container__label{
+.radio-container__input + .radio-container__label{
+  font-size: .9em;
   opacity: .5;
 }
 

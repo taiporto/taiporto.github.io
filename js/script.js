@@ -94,20 +94,6 @@ function toggleLanguage() {
     filterProjects();
   });
 
-  //Reset filters
-  $(".reset-link").click((e) => {
-    e.preventDefault();
-    const resetType = $(e.target).parent().attr("class");
-
-    if (resetType.includes("tecnologia")) {
-      $(".filter-group--tecnologia .grid-filter").removeAttr("checked");
-    } else if (resetType.includes("categoria")) {
-      $(".filter-group--categoria .grid-filter").removeAttr("checked");
-    }
-
-    filterProjects();
-  });
-
   // Closes responsive menu when user clicks outside of it
   $(document).click(function (e) {
     if (
