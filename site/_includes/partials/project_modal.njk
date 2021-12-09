@@ -8,29 +8,31 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h2>{{project.name}}</h2>
-                <div class="social-icons project-links d-flex justify-content-center">
+                <h2 class="modal-title text-center">{{project.name}}</h2>
+                <div class="project-description text-center pb-4">
+                    {{project.short_description}}
+                </div>
+                <div class="project-tags pb-2 d-flex flex-row flex-wrap justify-content-center">
+                  {%for tag in project.tags%}
+                    <div class="project-tag m-1 px-3 {{tag.color}}">{{tag.name}}</div>
+                  {% endfor %}
+                </div>
+                <div class="project-links-container pt-4 pb-4 project-links d-flex justify-content-center">
                     {%for link in project.links%}
-                        <a class="project-link d-flex align-items-center" href="{{link.url}}" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
-                            <div class="social-icon mr-2 mr-lg-1">
-                                <i class="{{link.icon}}"></i>
+                        <a class="project-link" href="{{link.url}}" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
+                            <div class="social-icon-container">
+                                <span class="social-icon {{link.icon}} mx-auto"></span>
                             </div>
                             <span class="text-primary">{{link.type}}</span>
                         </a>
                     {%endfor%}
                 </div>
-                <div class="project-tags py-2 d-flex flex-row flex-wrap justify-content-center">
-                  {%for tag in project.tags%}
-                    <div class="project-tag m-1 px-3 {{tag.color}}">{{tag.name}}</div>
-                  {% endfor %}
-                </div>
-                <div class="project-description text-center pt-3">
-                    {{project.short_description}}
-                </div>
-                <div class="project-img">
-                    <img src="{{site.img_path}}{{project.img}}" alt="">
-                </div>
                 {% set snippet %}{% include '../../_data/projects_articles/' + project.id + '.md' %}{% endset %}
+                {% if snippet !== '' %}
+                    <div class="project-img">
+                        <img src="{{site.img_path}}{{project.img}}" alt="">
+                    </div>
+                {%endif%}
                 {{ snippet | markdown | safe }}
             </div>
         </div>
