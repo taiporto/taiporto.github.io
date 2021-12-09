@@ -52,7 +52,7 @@
         values="0.56     0     0     0     0
                 0     0.22     0     0     0
                 0     0     0.78     0     0
-                0     0     0     1     0 "/>
+                0     0     0     0.9     0 "/>
     </filter>
   </defs>
 </svg>
@@ -159,18 +159,80 @@
         <section tabindex="0" class="resume-section" id="projects">
     <div class="resume-section-content">
         <h2 class="mb-5">Projects</h2>
-        <div class="container container-fluid card-container mx-auto row justify-content-center">
-            
-                <a class="card link-card--project mb-5 col-md-4 mx-2 col-lg-4 mb-lg-3 mx-lg-2" tabindex="0" alt="CalculaECO" aria-label="CalculaECO" data-toggle="modal" data-target="#calculaeco_en-modal" href="">
-                    <div class="card-content-wrapper">
-                        <img class="card-img" src="../public/img/projects/calcula-eco.png">
-                        <div class="card-img-overlay">
-                            <h3 class="card-title card-front-title text-center">CalculaECO</h3>
-                            <p class="card-text">CalculaECO is a GPA calculation tool built specifically for UFRJ&#39;s Communication majors.</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Modal com detalhamento do projeto -->
+        <div class="content-container">
+            <div class="filters-container">
+                <h3>Filtros</h3>
+                <form class="grid-filters">
+                    <fieldset class="filter-group filter-group--tecnologia">
+                        <legend>Tecnologia</legend>
+                        <div class="radio-container"><input id="radio-javascript" type="radio" name="tecnologia" value="JavaScript" class="radio-container__input grid-filter" checked/><label class="radio-container__label yellow" for="radio-javascript">Javascript</label></div>
+                        <div class="radio-container"><input id="radio-python" type="radio" name="tecnologia" value="Python" class="radio-container__input grid-filter"/><label class="radio-container__label pink" for="radio-python">Python</label></div>
+                    </fieldset>
+                    <fieldset class="filter-group filter-group--categoria">
+                        <legend>Categoria</legend>
+                        <div class="radio-container"><input id="radio-pessoal" type="radio" name="categoria" value="Pessoal" class="radio-container__input grid-filter"/><label class="radio-container__label indigo" for="radio-pessoal">Pessoal</label></div>
+                        <div class="radio-container"><input id="radio-freelance" type="radio" name="categoria" value="Freelance" class="radio-container__input grid-filter"/><label class="radio-container__label red" for="radio-freelance">Freelance</label></div>
+                        <div class="radio-container"><input id="radio-institucional" type="radio" name="categoria" value="Institucional" class="radio-container__input grid-filter"/><label class="radio-container__label black" for="radio-institucional">Institucional</label></div>
+                    </fieldset>
+                </form>
+            </div>
+            <div class="container container-fluid card-container muuri-grid position-relative mx-auto row">
+                
+                    <a class="link-card link-card--project mb-md-5 mb-lg-3" tabindex="0" alt="CalculaECO" aria-label="CalculaECO" data-toggle="modal" data-target="#calculaeco_en-modal" href="">
+                            <img class="link-card__img" src="../public/img/projects/calcula-eco.png">
+                            <div class="link-card__card-info card-info">
+                                <h3 class="card-title card-front-title text-center">CalculaECO</h3>
+                                
+                            </div>
+                            <div class="link-card__project-tags p-x-2 d-flex flex-row">
+                            
+                                <div class="project-tag m-1 indigo" data-tag-type="category" data-tag-name="Pessoal"><span class="d-none d-xl-block">Pessoal</span></div>
+                            
+                                <div class="project-tag m-1 yellow" data-tag-type="technology" data-tag-name="Javascript"><span class="d-none d-xl-block">Javascript</span></div>
+                            
+                                <div class="project-tag m-1 green" data-tag-type="" data-tag-name="Node.js"><span class="d-none d-xl-block">Node.js</span></div>
+                            
+                            </div>
+                    </a>
+                
+                    <a class="link-card link-card--project mb-md-5 mb-lg-3" tabindex="0" alt="BandejãoBot UFRJ" aria-label="BandejãoBot UFRJ" data-toggle="modal" data-target="#bandejaobot_en-modal" href="">
+                            <img class="link-card__img" src="../public/img/projects/bandejaobot.png">
+                            <div class="link-card__card-info card-info">
+                                <h3 class="card-title card-front-title text-center">BandejãoBot UFRJ</h3>
+                                
+                            </div>
+                            <div class="link-card__project-tags p-x-2 d-flex flex-row">
+                            
+                                <div class="project-tag m-1 indigo" data-tag-type="category" data-tag-name="Pessoal"><span class="d-none d-xl-block">Pessoal</span></div>
+                            
+                                <div class="project-tag m-1 pink" data-tag-type="technology" data-tag-name="Python"><span class="d-none d-xl-block">Python</span></div>
+                            
+                                <div class="project-tag m-1 blue" data-tag-type="" data-tag-name="TwitterAPI"><span class="d-none d-xl-block">TwitterAPI</span></div>
+                            
+                            </div>
+                    </a>
+                
+                    <a class="link-card link-card--project mb-md-5 mb-lg-3" tabindex="0" alt="Daily Pokémon" aria-label="Daily Pokémon" data-toggle="modal" data-target="#dailyPokemon_en-modal" href="">
+                            <img class="link-card__img" src="../public/img/projects/dailyPokemon.jpg">
+                            <div class="link-card__card-info card-info">
+                                <h3 class="card-title card-front-title text-center">Daily Pokémon</h3>
+                                
+                            </div>
+                            <div class="link-card__project-tags p-x-2 d-flex flex-row">
+                            
+                                <div class="project-tag m-1 indigo" data-tag-type="category" data-tag-name="Pessoal"><span class="d-none d-xl-block">Pessoal</span></div>
+                            
+                                <div class="project-tag m-1 yellow" data-tag-type="technology" data-tag-name="Javascript"><span class="d-none d-xl-block">Javascript</span></div>
+                            
+                                <div class="project-tag m-1 cyan" data-tag-type="" data-tag-name="React.js"><span class="d-none d-xl-block">React.js</span></div>
+                            
+                            </div>
+                    </a>
+                
+            </div>
+        </div>
+        
+            <!-- Modal com detalhamento do projeto -->
 <div class="modal project-modal fade" tabindex="-1" role="dialog" id="calculaeco_en-modal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -180,47 +242,45 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h2>CalculaECO</h2>
-                <div class="social-icons project-links d-flex justify-content-center">
+                <h2 class="modal-title text-center">CalculaECO</h2>
+                <div class="project-description text-center pb-4">
+                    CalculaECO is a GPA calculation tool built specifically for UFRJ&#39;s Communication majors.
+                </div>
+                <div class="project-tags pb-2 d-flex flex-row flex-wrap justify-content-center">
+                  
+                    <div class="project-tag m-1 px-3 indigo">Pessoal</div>
+                  
+                    <div class="project-tag m-1 px-3 yellow">Javascript</div>
+                  
+                    <div class="project-tag m-1 px-3 green">Node.js</div>
+                  
+                </div>
+                <div class="project-links-container pt-4 pb-4 project-links d-flex justify-content-center">
                     
-                        <a class="link-card d-flex align-items-center" href="https://github.com/liaporto/calcula-eco" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
-                            <div class="social-icon mr-2 mr-lg-1">
-                                <i class="fab fa-github"></i>
+                        <a class="project-link" href="https://github.com/liaporto/calcula-eco" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
+                            <div class="social-icon-container">
+                                <span class="social-icon fab fa-github mx-auto"></span>
                             </div>
                             <span class="text-primary">Github</span>
                         </a>
                     
-                        <a class="link-card d-flex align-items-center" href="http://calcula-eco.herokuapp.com/" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
-                            <div class="social-icon mr-2 mr-lg-1">
-                                <i class="fas fa-desktop"></i>
+                        <a class="project-link" href="http://calcula-eco.herokuapp.com/" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
+                            <div class="social-icon-container">
+                                <span class="social-icon fas fa-desktop mx-auto"></span>
                             </div>
                             <span class="text-primary">Site/Perfil</span>
                         </a>
                     
                 </div>
-                <div class="project-img">
-                    <img src="../public/img/projects/calcula-eco.png" alt="">
-                </div>
-                <div class="project-description text-center pt-3">
-                    CalculaECO is a GPA calculation tool built specifically for UFRJ&#39;s Communication majors.
-                </div>
+                
                 
                 
             </div>
         </div>
     </div>
 </div>
-            
-                <a class="card link-card--project mb-5 col-md-4 mx-2 col-lg-4 mb-lg-3 mx-lg-2" tabindex="0" alt="BandejãoBot UFRJ" aria-label="BandejãoBot UFRJ" data-toggle="modal" data-target="#bandejaobot_en-modal" href="">
-                    <div class="card-content-wrapper">
-                        <img class="card-img" src="../public/img/projects/bandejaobot.png">
-                        <div class="card-img-overlay">
-                            <h3 class="card-title card-front-title text-center">BandejãoBot UFRJ</h3>
-                            <p class="card-text">BandejãoBot UFRJ is a Twitter bot and it posts UFRJ&#39;s cafeteria menu daily at 9AM.</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Modal com detalhamento do projeto -->
+        
+            <!-- Modal com detalhamento do projeto -->
 <div class="modal project-modal fade" tabindex="-1" role="dialog" id="bandejaobot_en-modal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -230,47 +290,45 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h2>BandejãoBot UFRJ</h2>
-                <div class="social-icons project-links d-flex justify-content-center">
+                <h2 class="modal-title text-center">BandejãoBot UFRJ</h2>
+                <div class="project-description text-center pb-4">
+                    BandejãoBot UFRJ is a Twitter bot and it posts UFRJ&#39;s cafeteria menu daily at 9AM.
+                </div>
+                <div class="project-tags pb-2 d-flex flex-row flex-wrap justify-content-center">
+                  
+                    <div class="project-tag m-1 px-3 indigo">Pessoal</div>
+                  
+                    <div class="project-tag m-1 px-3 pink">Python</div>
+                  
+                    <div class="project-tag m-1 px-3 blue">TwitterAPI</div>
+                  
+                </div>
+                <div class="project-links-container pt-4 pb-4 project-links d-flex justify-content-center">
                     
-                        <a class="link-card d-flex align-items-center" href="https://github.com/liaporto/bandejaobot-ufrj" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
-                            <div class="social-icon mr-2 mr-lg-1">
-                                <i class="fab fa-github"></i>
+                        <a class="project-link" href="https://github.com/liaporto/bandejaobot-ufrj" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
+                            <div class="social-icon-container">
+                                <span class="social-icon fab fa-github mx-auto"></span>
                             </div>
                             <span class="text-primary">Github</span>
                         </a>
                     
-                        <a class="link-card d-flex align-items-center" href="https://twitter.com/bandejaobotufrj" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
-                            <div class="social-icon mr-2 mr-lg-1">
-                                <i class="fas fa-desktop"></i>
+                        <a class="project-link" href="https://twitter.com/bandejaobotufrj" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
+                            <div class="social-icon-container">
+                                <span class="social-icon fas fa-desktop mx-auto"></span>
                             </div>
                             <span class="text-primary">Site/Perfil</span>
                         </a>
                     
                 </div>
-                <div class="project-img">
-                    <img src="../public/img/projects/bandejaobot.png" alt="">
-                </div>
-                <div class="project-description text-center pt-3">
-                    BandejãoBot UFRJ is a Twitter bot and it posts UFRJ&#39;s cafeteria menu daily at 9AM.
-                </div>
+                
                 
                 
             </div>
         </div>
     </div>
 </div>
-            
-                <a class="card link-card--project mb-5 col-md-4 mx-2 col-lg-4 mb-lg-3 mx-lg-2" tabindex="0" alt="Daily Pokémon" aria-label="Daily Pokémon" data-toggle="modal" data-target="#dailyPokemon_en-modal" href="">
-                    <div class="card-content-wrapper">
-                        <img class="card-img" src="../public/img/projects/dailyPokemon.jpg">
-                        <div class="card-img-overlay">
-                            <h3 class="card-title card-front-title text-center">Daily Pokémon</h3>
-                            <p class="card-text">Discover who&#39;s the daily Pokémon and who&#39;s your birthday Pokémon.</p>
-                        </div>
-                    </div>
-                </a>
-                <!-- Modal com detalhamento do projeto -->
+        
+            <!-- Modal com detalhamento do projeto -->
 <div class="modal project-modal fade" tabindex="-1" role="dialog" id="dailyPokemon_en-modal">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
@@ -280,38 +338,44 @@
                 </button>
             </div>
             <div class="modal-body">
-                <h2>Daily Pokémon</h2>
-                <div class="social-icons project-links d-flex justify-content-center">
+                <h2 class="modal-title text-center">Daily Pokémon</h2>
+                <div class="project-description text-center pb-4">
+                    Discover who&#39;s the daily Pokémon and who&#39;s your birthday Pokémon.
+                </div>
+                <div class="project-tags pb-2 d-flex flex-row flex-wrap justify-content-center">
+                  
+                    <div class="project-tag m-1 px-3 indigo">Pessoal</div>
+                  
+                    <div class="project-tag m-1 px-3 yellow">Javascript</div>
+                  
+                    <div class="project-tag m-1 px-3 cyan">React.js</div>
+                  
+                </div>
+                <div class="project-links-container pt-4 pb-4 project-links d-flex justify-content-center">
                     
-                        <a class="link-card d-flex align-items-center" href="https://github.com/liaporto/daily-pokemon" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
-                            <div class="social-icon mr-2 mr-lg-1">
-                                <i class="fab fa-github"></i>
+                        <a class="project-link" href="https://github.com/liaporto/daily-pokemon" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
+                            <div class="social-icon-container">
+                                <span class="social-icon fab fa-github mx-auto"></span>
                             </div>
                             <span class="text-primary">Github</span>
                         </a>
                     
-                        <a class="link-card d-flex align-items-center" href="https://liaporto.github.io/daily-pokemon" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
-                            <div class="social-icon mr-2 mr-lg-1">
-                                <i class="fas fa-desktop"></i>
+                        <a class="project-link" href="https://liaporto.github.io/daily-pokemon" target="_blank" rel="noopener noreferrer" alt="Projeto no Github">
+                            <div class="social-icon-container">
+                                <span class="social-icon fas fa-desktop mx-auto"></span>
                             </div>
                             <span class="text-primary">Site/Perfil</span>
                         </a>
                     
                 </div>
-                <div class="project-img">
-                    <img src="../public/img/projects/dailyPokemon.jpg" alt="">
-                </div>
-                <div class="project-description text-center pt-3">
-                    Discover who&#39;s the daily Pokémon and who&#39;s your birthday Pokémon.
-                </div>
+                
                 
                 
             </div>
         </div>
     </div>
 </div>
-            
-        </div>
+        
     </div>
 </section>
 
@@ -370,10 +434,10 @@
         
           <div class="container card-container row py-3">
             
-              <a class="card link-card--general col-6 col-md-4 col-xl-3" tabindex="0" href="https://www.minhanaturgy.com.br" alt="Minha Naturgy" aria-label="Minha Naturgy" rel="noopener noreferrer" target="_blank">
+              <a class="card link-card link-card--general col-6 col-md-4 col-xl-3" tabindex="0" href="https://www.minhanaturgy.com.br" alt="Minha Naturgy" aria-label="Minha Naturgy" rel="noopener noreferrer" target="_blank">
                 <div class="card-content-wrapper">
-                  <img class="card-img" src="../public/img/other_links/naturgy.jpg"/>
-                  <div class="card-img-overlay justify-content-center">
+                  <img class="link-card__img" src="../public/img/other_links/naturgy.jpg"/>
+                  <div class="link-card__card-info card-info justify-content-center">
                     <h3 class="card-title card-front-title text-center">Minha Naturgy</h3>
                   </div>
                 </div>
@@ -408,10 +472,10 @@
         
           <div class="container card-container row py-3">
             
-              <a class="card link-card--general col-6 col-md-4 col-xl-3" tabindex="0" href="https://siac.ufrj.br/" alt="siac website" aria-label="siac website" rel="noopener noreferrer" target="_blank">
+              <a class="card link-card link-card--general col-6 col-md-4 col-xl-3" tabindex="0" href="https://siac.ufrj.br/" alt="siac website" aria-label="siac website" rel="noopener noreferrer" target="_blank">
                 <div class="card-content-wrapper">
-                  <img class="card-img" src="../public/img/other_links/siac.jpg"/>
-                  <div class="card-img-overlay justify-content-center">
+                  <img class="link-card__img" src="../public/img/other_links/siac.jpg"/>
+                  <div class="link-card__card-info card-info justify-content-center">
                     <h3 class="card-title card-front-title text-center">siac website</h3>
                   </div>
                 </div>
@@ -664,6 +728,9 @@
 
         <!-- Focusable plugin jQuery-->
         <script src=""></script>
+
+        <!-- Muuri -->
+        <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
 
         <!-- Core theme JS-->
         <script src="/js/script.js"></script>
