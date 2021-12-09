@@ -4,19 +4,17 @@
         <div class="master-skills-list row justify-content-center">
 
         {% for category in site.skills | orderSkillsMoreFirst %}
-                <div class="category-card col-lg-4 col-xl-3 d-flex flex-column align-items-center">
-                    <h3>{{category.name}}</h3>
+                <div class="category-card d-flex flex-column align-items-center">
+                    <h3 class="category-card__title">{{category.name}}</h3>
                     
                     <ul class="category-card__skill-list">
                         {% for skill in category.skills %}
-                            <li class="category-card__skill row">
+                            <li class="category-card__skill">
                                 {% if skill.icon_type === "fa"%}
-                                <i class="{{skill.icon}} skill-icon col-3 px-1 p-md-0"></i>
+                                <i class="{{skill.icon}} skill-icon"></i>
                                 {%endif%}
                                 {% if skill.icon_type === "svg"%}
-                                <div class="skill-icon col-3 px-1 p-md-0 text-center">
-                                    <img src="{{site.img_path}}{{skill.icon}}" class="skill-icon__img"/>
-                                </div>
+                                <img src="{{site.img_path}}{{skill.icon}}" class="skill-icon skill-icon__img"/>
                                 {%endif%}
                                 <span class="skill-name p-0">{{skill.name}}</span>
                             </li>
