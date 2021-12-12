@@ -22,10 +22,16 @@
                 {% for project in locale.projects %}
                     <a class="link-card link-card--project mb-md-5 mb-lg-3" tabindex="0" alt="{{project.name}}" aria-label="{{project.name}}" data-toggle="modal" data-target="#{{project.id}}-modal" href="">
                             <img class="link-card__img" src="{{site.img_path}}{{project.img}}">
+                            {% if project.name.length >= 18 %}
+                            <div class="link-card__card-info card-info">
+                                <h3 class="card-title card-front-title small-text text-center">{{project.name}}</h3>
+                            </div>
+                            {% else %}
                             <div class="link-card__card-info card-info">
                                 <h3 class="card-title card-front-title text-center">{{project.name}}</h3>
-                                {# <p class="card-text">{{project.short_description}}</p> #}
                             </div>
+                            {% endif %}
+
                             <div class="link-card__project-tags p-x-2 d-flex flex-row">
                             {%for tag in project.tags%}
                                 <div class="project-tag m-1 {{tag.color}}" data-tag-type="{{tag.type}}" data-tag-name="{{tag.name}}"><span class="d-none d-xl-block">{{tag.name}}</span></div>
