@@ -11,7 +11,7 @@ const tags = {
     name: "Freelance",
     color: "red",
   },
-  Institucional: {
+  institucional: {
     type: "category",
     name: "Institucional",
     color: "black",
@@ -94,6 +94,24 @@ const dailyPokemonBasics = {
   ],
 };
 
+const toolkitDdjBasics = {
+  img: `${projectsImgsPath}toolkit-ddj.png`,
+  name: "Caixa de Ferramentas",
+  tags: [tags.institucional, tags.javascript, tags.react],
+  links: [
+    {
+      type: "Github",
+      url: "https://github.com/escola-de-dados/toolkit_ddj",
+      icon: "fab fa-github",
+    },
+    {
+      type: "Site/Perfil",
+      url: "http://kit.jornalismodedados.org/",
+      icon: "fas fa-desktop",
+    },
+  ],
+};
+
 module.exports = {
   "pt-br": [
     {
@@ -114,6 +132,12 @@ module.exports = {
       short_description:
         "Descubra o Pokémon diário e o Pokémon do seu aniversário.",
     },
+    {
+      id: "toolkitDdj_pt",
+      ...toolkitDdjBasics,
+      short_description:
+        "Desenvolvida durante extensão acadêmica na Open Knowledge Brasil. É uma base colaborativa de mais de 145 ferramentas para trabalhar com dados.",
+    },
   ],
   "en-us": [
     {
@@ -133,6 +157,12 @@ module.exports = {
       ...dailyPokemonBasics,
       short_description:
         "Discover who's the daily Pokémon and who's your birthday Pokémon.",
+    },
+    {
+      id: "toolkitDdj_en",
+      ...toolkitDdjBasics,
+      short_description:
+        "Developed while on an academic extension project at Open Knowldge Brasil. Discover more than 145 tools for working with data.",
     },
   ],
 };
