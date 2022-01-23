@@ -21,6 +21,11 @@ const tags = {
     name: "Javascript",
     color: "yellow",
   },
+  wordpress: {
+    type: "technology",
+    name: "WordPress",
+    color: "wp",
+  },
   python: {
     type: "technology",
     name: "Python",
@@ -37,6 +42,10 @@ const tags = {
   twitterapi: {
     name: "TwitterAPI",
     color: "blue",
+  },
+  php: {
+    name: "PHP",
+    color: "php",
   },
 };
 
@@ -112,6 +121,19 @@ const toolkitDdjBasics = {
   ],
 };
 
+const portalOPlotBasics = {
+  img: `${projectsImgsPath}portal-o-plot.png`,
+  name: "Portal O Plot",
+  tags: [tags.freelance, tags.wordpress, tags.php],
+  links: [
+    {
+      type: "Site/Perfil",
+      url: "https://portaloplot.com.br/",
+      icon: "fas fa-desktop",
+    },
+  ],
+};
+
 module.exports = {
   "pt-br": [
     {
@@ -138,6 +160,12 @@ module.exports = {
       short_description:
         "Desenvolvida durante extensão acadêmica na Open Knowledge Brasil. É uma base colaborativa de mais de 145 ferramentas para trabalhar com dados.",
     },
+    {
+      id: "portalOPlot_pt",
+      ...portalOPlotBasics,
+      short_description:
+        "Site sobre entretenimento e cultura pop desenvolvido como projeto freelance. Tema customizado construído a partir do tema Neve.",
+    },
   ],
   "en-us": [
     {
@@ -163,6 +191,12 @@ module.exports = {
       ...toolkitDdjBasics,
       short_description:
         "Developed while on an academic extension project at Open Knowldge Brasil. Discover more than 145 tools for working with data.",
+    },
+    {
+      id: "portalOPlot_en",
+      ...portalOPlotBasics,
+      short_description:
+        "Entertainment and pop culture news website developed as a freelance project. Customized theme created from Neve.",
     },
   ],
 };

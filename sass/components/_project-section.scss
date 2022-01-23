@@ -1,101 +1,111 @@
-.content-container{
-  display:flex;
+.content-container {
+  display: flex;
 }
 
-.filters-container{
+.filters-container {
   display: flex;
   flex-direction: column;
   border-right: 1px solid $secondary;
 }
 
-.filter-group{
+.filter-group {
   display: flex;
   flex-direction: column;
   margin: 1em 0 2em;
 }
 
-.radio-container__input{
+.radio-container__input {
   position: absolute;
   left: -9999999px;
 }
 
-.radio-container__input + .radio-container__label{
-  font-size: .9em;
-  opacity: .5;
+.radio-container__input + .radio-container__label {
+  font-size: 0.9em;
+  opacity: 0.5;
 }
 
-.radio-container__label:hover{
+.radio-container__label:hover {
   cursor: pointer;
 }
 
-.radio-container__input:checked + .radio-container__label, .radio-container__input:focus + .radio-container__label{
+.radio-container__input:checked + .radio-container__label,
+.radio-container__input:focus + .radio-container__label {
   box-shadow: 0 0 1px 3px lighten($purple, 50%);
 }
 
-.radio-container__input:checked + .radio-container__label{
+.radio-container__input:checked + .radio-container__label {
   opacity: 1;
 }
 
-.project-tag{
+.project-tag {
   font-size: 0.7rem;
 }
 
-.project-tag, .radio-container__label{
-  padding: 0.2rem .5rem;
+.project-tag,
+.radio-container__label {
+  padding: 0.2rem 0.5rem;
   border-radius: 50rem !important;
 
-  &.purple{
+  &.purple {
     color: $white;
     background-color: $purple;
   }
-  &.orange{
+  &.orange {
     color: $white;
     background-color: $orange;
   }
-  &.red{
+  &.red {
     color: $white;
     background-color: $red;
   }
-  &.dark-orange{
+  &.dark-orange {
     color: $white;
     background-color: $dark-orange;
   }
-  &.green{
+  &.green {
     color: $white;
     background-color: $green;
   }
-  &.yellow{
+  &.yellow {
     color: $gray-800;
     background-color: $yellow;
   }
-  &.cyan{
+  &.cyan {
     color: $white;
     background-color: $cyan;
   }
-  &.blue{
+  &.blue {
     color: $white;
     background-color: $blue;
   }
-  &.indigo{
+  &.indigo {
     color: $white;
     background-color: $indigo;
   }
-  &.pink{
+  &.pink {
     color: $white;
     background-color: $pink;
   }
-  &.black{
+  &.black {
     color: $white;
     background-color: $black;
   }
+  &.wp {
+    color: $white;
+    background-color: $wp;
+  }
+  &.php {
+    color: $white;
+    background-color: $php;
+  }
 }
 
-@include media-breakpoint-down(md){
-  .content-container{
+@include media-breakpoint-down(md) {
+  .content-container {
     flex-direction: column;
   }
-  
-  .filters-container{
+
+  .filters-container {
     margin-right: 0;
     padding-right: 0;
     margin-bottom: 5%;
@@ -104,37 +114,37 @@
     border-bottom: 1px solid $gray-200;
   }
 
-  .grid-filters{
+  .grid-filters {
     margin-top: 1em;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
-    .reset-link{
+    .reset-link {
       width: 100%;
     }
 
-    .filter-group{
+    .filter-group {
       width: 40%;
       margin: 1em auto 0;
     }
   }
 
-  .muuri-grid{
+  .muuri-grid {
     justify-content: center;
     align-items: center;
   }
 }
 
-@include media-breakpoint-up(md){
-  .filters-container{
+@include media-breakpoint-up(md) {
+  .filters-container {
     margin-right: 2%;
     padding-right: 5%;
   }
 }
 
-@include media-breakpoint-up(xl){
-  .filters-container{
+@include media-breakpoint-up(xl) {
+  .filters-container {
     margin-right: 5%;
     padding-right: 5%;
   }
