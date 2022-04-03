@@ -1,14 +1,32 @@
-const experienceLinksImgPath = "other_links/"
-const siacImgPath = `${experienceLinksImgPath}siac.jpg`
-const naturgyImgPath = `${experienceLinksImgPath}naturgy.jpg`
+const experienceLinksImgPath = "other_links/";
+const siacImgPath = `${experienceLinksImgPath}siac.jpg`;
+const naturgyImgPath = `${experienceLinksImgPath}naturgy.jpg`;
 
 module.exports = {
   "en-us": [
     {
+      title: "Junior Software Developer",
+      place: "Pipefy",
+      description: "",
+      period: "Mar 2022 - Present",
+      description:
+        "- Sotware developer trainee at Pipefy under the program Young Guns Tech.",
+    },
+    {
+      title: "Marketing Manager",
+      place: "EJCM",
+      description: "",
+      period: "Jan 2022 - Mar 2022",
+      description: `- Strategic planning and brand image management;
+        - Implementation of data-driven culture inside marketing;
+        - Implementation of content planning, post schedule and automation based workflow;
+        - Leader of the website renewal team.`,
+    },
+    {
       title: "Front-End Developer | Marketing Consultant",
       place: "EJCM",
       description: "",
-      period: "Aug 2021 - Present",
+      period: "Aug 2021 - Dec 2021",
       description:
         "- Project development in React.js and React Native;\n- Post design and blog articles writing;\n- Member of the Inclusion & Diversity Initiative.",
     },
@@ -43,10 +61,28 @@ module.exports = {
   ],
   "pt-br": [
     {
+      title: "Desenvolvedora de Software Jr.",
+      place: "Pipefy",
+      description: "",
+      period: "Mar 2022 - Atualmente",
+      description:
+        "- Desenvolvedora de software trainee pelo programa Young Guns Tech.",
+    },
+    {
+      title: "Coordenadora de Marketing",
+      place: "EJCM",
+      description: "",
+      period: "Jan 2022 - Mar 2022",
+      description: `- Planejamento estratégico e posicionamento de marca;
+        - Implementação da cultura de dados e data-driven decisions;
+        - Consolidação de calendário e automação de postagem;
+        - Coordenação da equipe de reformulação do site institucional.`,
+    },
+    {
       title: "Desenvolvedora Front-End | Assessora de Marketing",
       place: "EJCM",
       description: "",
-      period: "Ago 2021 - Atualmente",
+      period: "Ago 2021 - Dez 2021",
       description:
         "- Desenvolvimento de projetos web em React.js e projetos mobile em React Native;\n- Elaboração de posts para redes sociais, redação de artigos para o blog da empresa e planejamento de conteúdo;\n- Membro da Iniciativa de Diversidade e Inclusão, movimento que visa promover práticas de D&I dentro da empresa;\n- Ideação e design de brindes para o aniversário da empresa.",
     },
@@ -79,4 +115,4 @@ module.exports = {
       period: "Jan 2020 - Mai 2020",
     },
   ],
-}
+};
