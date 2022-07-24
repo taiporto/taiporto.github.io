@@ -1,6 +1,7 @@
 const experienceLinksImgPath = "other_links/";
 const siacImgPath = `${experienceLinksImgPath}siac.jpg`;
 const naturgyImgPath = `${experienceLinksImgPath}naturgy.jpg`;
+const ejcmImgPath = `${experienceLinksImgPath}ejcm.jpg`;
 
 module.exports = {
   "en-us": [
@@ -21,6 +22,13 @@ module.exports = {
         - Implementation of data-driven culture inside marketing;
         - Implementation of content planning, post schedule and automation based workflow;
         - Leader of the website renewal team.`,
+      media: [
+        {
+          link: "https://ejcm.com.br/",
+          title: "EJCM's website",
+          img: ejcmImgPath,
+        },
+      ],
     },
     {
       title: "Front-End Developer | Marketing Consultant",
@@ -77,6 +85,13 @@ module.exports = {
         - Implementação da cultura de dados e data-driven decisions;
         - Consolidação de calendário e automação de postagem;
         - Coordenação da equipe de reformulação do site institucional.`,
+      media: [
+        {
+          link: "https://ejcm.com.br/",
+          title: "Site da EJCM",
+          img: ejcmImgPath,
+        },
+      ],
     },
     {
       title: "Desenvolvedora Front-End | Assessora de Marketing",
