@@ -1,10 +1,10 @@
-const experience = require("./site_data/experience")
-education = require("./site_data/education")
-projects = require("./site_data/projects")
-skills = require("./site_data/skills")
-interests = require("./site_data/interests")
+const experience = require("./site_data/experience");
+education = require("./site_data/education");
+projects = require("./site_data/projects");
+skills = require("./site_data/skills");
+interests = require("./site_data/interests");
 
-const title = "Lia Porto"
+const title = "Lia Porto";
 const imgPath = "../public/img/";
 const baseUrl = "https://www.liaporto.github.io";
 
@@ -24,7 +24,8 @@ module.exports = {
     lang: "en-us",
     metaTitle: `${title}`,
     metaDescription: `Personal website, portfolio and resume`,
-    inSiteDescription: "Front-end developer and Communications student at UFRJ.",
+    inSiteDescription:
+      "Front-end developer and Information Systems student at UFF.",
     backtoTop: "Back to top",
     topics: [
       {
@@ -53,7 +54,8 @@ module.exports = {
     lang: "pt-br",
     metaTitle: `${title}`,
     metaDescription: `Site pessoal, currículo e portfólio.`,
-    inSiteDescription: "Desenvolvedora front-end e estudante de Comunicação Social na UFRJ.",
+    inSiteDescription:
+      "Desenvolvedora front-end e estudante de Sistemas de Informação na UFF.",
     backtoTop: "Voltar ao topo",
     topics: [
       {
@@ -77,4 +79,4 @@ module.exports = {
     interests: [...interests["pt-br"]],
     projects: [...projects["pt-br"]],
   },
-}
+};
