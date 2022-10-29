@@ -4,7 +4,7 @@ projects = require("./site_data/projects");
 skills = require("./site_data/skills");
 interests = require("./site_data/interests");
 
-const title = "Lia Porto";
+const title = "Tai Porto";
 const imgPath = "../public/img/";
 const baseUrl = "https://www.taiporto.github.io";
 
@@ -55,7 +55,7 @@ module.exports = {
     metaTitle: `${title}`,
     metaDescription: `Site pessoal, currículo e portfólio.`,
     inSiteDescription:
-      "Desenvolvedora front-end e estudante de Sistemas de Informação na UFF.",
+      "Desenvolvedor front-end e estudante de Sistemas de Informação na UFF.",
     backtoTop: "Voltar ao topo",
     topics: [
       {

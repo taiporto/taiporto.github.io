@@ -1,6 +1,6 @@
 module.exports = {
-  firstName: "Lia",
+  firstName: "Tai",
   lastName: "Porto D. Barcellos",
-  email: "liabarcellos28@gmail.com",
-  location: "Brasil, Rio de Janeiro - RJ"
+  email: "tai.dporto@gmail.com",
+  location: "Brasil, Rio de Janeiro - RJ",
 };
