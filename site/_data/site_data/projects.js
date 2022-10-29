@@ -56,7 +56,7 @@ const calculaEcoBasics = {
   links: [
     {
       type: "Github",
-      url: "https://github.com/liaporto/calcula-eco",
+      url: "https://github.com/taiporto/calcula-eco",
       icon: "fab fa-github",
     },
     {
@@ -74,7 +74,7 @@ const bandejaoBotBasics = {
   links: [
     {
       type: "Github",
-      url: "https://github.com/liaporto/bandejaobot-ufrj",
+      url: "https://github.com/taiporto/bandejaobot-ufrj",
       icon: "fab fa-github",
     },
     {
@@ -92,12 +92,12 @@ const dailyPokemonBasics = {
   links: [
     {
       type: "Github",
-      url: "https://github.com/liaporto/daily-pokemon",
+      url: "https://github.com/taiporto/daily-pokemon",
       icon: "fab fa-github",
     },
     {
       type: "Site/Perfil",
-      url: "https://liaporto.github.io/daily-pokemon",
+      url: "https://taiporto.github.io/daily-pokemon",
       icon: "fas fa-desktop",
     },
   ],

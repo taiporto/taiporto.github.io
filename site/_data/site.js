@@ -6,7 +6,7 @@ interests = require("./site_data/interests");
 
 const title = "Lia Porto";
 const imgPath = "../public/img/";
-const baseUrl = "https://www.liaporto.github.io";
+const baseUrl = "https://www.taiporto.github.io";
 
 module.exports = {
   buildTime: new Date(),
