@@ -69,15 +69,15 @@ module.exports = {
   ],
   "pt-br": [
     {
-      title: "Desenvolvedora de Software Jr.",
+      title: "Desenvolvedor de Software Jr.",
       place: "Pipefy",
       description: "",
       period: "Mar 2022 - Atualmente",
       description:
-        "- Desenvolvedora de software trainee pelo programa Young Guns Tech.",
+        "- Desenvolvedor de software trainee pelo programa Young Guns Tech.",
     },
     {
-      title: "Coordenadora de Marketing",
+      title: "Coordenador de Marketing",
       place: "EJCM",
       description: "",
       period: "Jan 2022 - Mar 2022",
@@ -94,7 +94,7 @@ module.exports = {
       ],
     },
     {
-      title: "Desenvolvedora Front-End | Assessora de Marketing",
+      title: "Desenvolvedor Front-End | Assessor de Marketing",
       place: "EJCM",
       description: "",
       period: "Ago 2021 - Dez 2021",
@@ -102,7 +102,7 @@ module.exports = {
         "- Desenvolvimento de projetos web em React.js e projetos mobile em React Native;\n- Elaboração de posts para redes sociais, redação de artigos para o blog da empresa e planejamento de conteúdo;\n- Membro da Iniciativa de Diversidade e Inclusão, movimento que visa promover práticas de D&I dentro da empresa;\n- Ideação e design de brindes para o aniversário da empresa.",
     },
     {
-      title: "Estagiária de Experiência do cliente",
+      title: "Estagiário de Experiência do cliente",
       place: "Naturgy Brasil",
       description:
         "- Design e implementação de menu de navegação para o portal Minha Naturgy;\n- Atualizações de layout e criação de funcionalidades para as centrais de ajuda internas e externas;\n- Redação de texto e mudanças de layout visando melhorias de SEO e usabilidade;\n- Análise de métricas de uso com Google Analytics e Google Data Studio;\n- Desenvolvimento, aplicação e análise de resultados de pesquisas de satisfação.",

@@ -55,7 +55,7 @@ module.exports = {
     metaTitle: `${title}`,
     metaDescription: `Site pessoal, currículo e portfólio.`,
     inSiteDescription:
-      "Desenvolvedora front-end e estudante de Sistemas de Informação na UFF.",
+      "Desenvolvedor front-end e estudante de Sistemas de Informação na UFF.",
     backtoTop: "Voltar ao topo",
     topics: [
       {
