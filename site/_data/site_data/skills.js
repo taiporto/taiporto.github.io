@@ -33,9 +33,14 @@ module.exports = [
     name: "Code",
     skills: [
       {
-        name: "Javascript",
+        name: "JavaScript",
         icon: "fab fa-js",
         icon_type: "fa",
+      },
+      {
+        name: "TypeScript",
+        icon: "skill_icons/typescript.svg",
+        icon_type: "svg",
       },
       {
         name: "React.js",
@@ -50,6 +55,11 @@ module.exports = [
       {
         name: "Node.js",
         icon: "fab fa-node-js",
+        icon_type: "fa",
+      },
+      {
+        name: "PHP",
+        icon: "fab fa-php",
         icon_type: "fa",
       },
       {
@@ -84,4 +94,4 @@ module.exports = [
       },
     ],
   },
-]
+];
