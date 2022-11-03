@@ -15,7 +15,7 @@ module.exports = {
   year: new Date().getFullYear(),
   style_src: "../public/css/style.css",
   img_path: `${imgPath}`,
-  metaImage: `${imgPath}metaimg.png`,
+  metaImage: `/public/img/metaimg.png`,
   favicon: `${imgPath}favicon.ico`,
   js_src: "/js/script.js",
   skills: [...skills],
