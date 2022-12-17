@@ -61,7 +61,7 @@ const calculaEcoBasics = {
     },
     {
       type: "Site/Perfil",
-      url: "http://calcula-eco.herokuapp.com/",
+      url: "https://calcula-eco.onrender.com/",
       icon: "fas fa-desktop",
     },
   ],
