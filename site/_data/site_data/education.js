@@ -1,4 +1,4 @@
-const craUFF = undefined;
+const craUFF = 8.4;
 const craUFRJ = 9.4;
 
 module.exports = {

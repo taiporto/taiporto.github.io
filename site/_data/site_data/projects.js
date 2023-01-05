@@ -190,7 +190,7 @@ module.exports = {
       id: "toolkitDdj_en",
       ...toolkitDdjBasics,
       short_description:
-        "Developed while on an academic extension project at Open Knowldge Brasil. Discover more than 145 tools for working with data.",
+        "Developed while on an academic extension project at Open Knowledge Brasil. Discover more than 145 tools for working with data.",
     },
     {
       id: "portalOPlot_en",
