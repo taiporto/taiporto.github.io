@@ -11,7 +11,7 @@ module.exports = {
       description: "",
       period: "Mar 2022 - Present",
       description:
-        "- Sotware developer trainee at Pipefy under the program Young Guns Tech.",
+        "- Software developer trainee at Pipefy under the program Young Guns Tech between March/22 and March/23.\n- Currently part of the Design System squad, developing accessible and performant components for the product-focused developers as the end users.\n- Elaborating and writing guidelines focused on improving developer experience, both with coding and code reviews.\n- Developing an entreprise frontend application with React.js, TypeScript, Nextjs, GraphQL and other front-end related tools.\n- Writing tests with Jest and React Testing Library."
     },
     {
       title: "Marketing Manager",
@@ -74,7 +74,7 @@ module.exports = {
       description: "",
       period: "Mar 2022 - Atualmente",
       description:
-        "- Desenvolvedor de software trainee pelo programa Young Guns Tech.",
+        "- Desenvolvedor de software trainee pelo programa Young Guns Tech entre março/22 e março/23.\n- Atualmente no time de Design System, elaborando componentes performáticos e acessíveis para uso dos demais times de engenharia.\n- Elaboração e escrita de guidelines focadas em melhorar a experiência dos desenvolvedores, tanto na área de código quanto na de revisão de código.\n- Desenvolvimento de aplicação frontend com ReactJS, Typescript, Nextjs, GraphQL e outras tecnologias relativas ao frontend.\n- Escrita de testes com Jest e React Testing Library.",
     },
     {
       title: "Coordenador de Marketing",
