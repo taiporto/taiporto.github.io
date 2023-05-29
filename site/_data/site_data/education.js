@@ -6,7 +6,7 @@ module.exports = {
     {
       name: "Fluminense Federal University",
       title: "B.A in Information Systems",
-      info: "Bachelor Degree in Information Systems, currently on first semester.",
+      info: "Bachelor Degree in Information Systems, currently on second semester.",
       gpa: craUFF ? `GPA: ${((craUFF * 4) / 10).toFixed(2)}` : "",
       period: "Aug 2022 - Present",
     },
@@ -27,7 +27,7 @@ module.exports = {
     {
       name: "Universidade Federal Fluminense",
       title: "Bacharelado em Sistemas de Informação",
-      info: "Atualmente no 1º período.",
+      info: "Atualmente no 2º período.",
       gpa: craUFF ? `C.R.A: ${craUFF}` : "",
       period: "Ago 2022 - Atualmente",
     },
