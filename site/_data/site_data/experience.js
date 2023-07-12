@@ -1,12 +1,14 @@
+const projectImgsPath = "projects/";
 const experienceLinksImgPath = "other_links/";
 const siacImgPath = `${experienceLinksImgPath}siac.jpg`;
 const naturgyImgPath = `${experienceLinksImgPath}naturgy.jpg`;
+const toolkitImgPath = `${projectImgsPath}toolkit-ddj.png`;
 const ejcmImgPath = `${experienceLinksImgPath}ejcm.jpg`;
 
 module.exports = {
   "en-us": [
     {
-      title: "Junior Software Developer",
+      title: "Junior Front-End Software Developer",
       place: "Pipefy",
       description: "",
       period: "Mar 2022 - Present",
@@ -37,6 +39,21 @@ module.exports = {
       period: "Aug 2021 - Dec 2021",
       description:
         "- Project development in React.js and React Native;\n- Post design and blog articles writing;\n- Member of the Inclusion & Diversity Initiative.",
+    },
+    {
+      title: "Extensionist Front-End Developer",
+      place: "Open Knowledge Brasil",
+      description: "",
+      period: "Jul 2021 - Oct 2021",
+      description:
+        "- Extensionist at Open Knowledge Brasil focusing on developing for Escola de Dados (Data School)\n;- Development of the Data Journalism Toolkit, a collaborative online database of several tools for working with and analyzing data built with React.js and Next.js.",
+      media: [
+        {
+          link: "http://kit.jornalismodedados.org/",
+          title: "Caixa de Ferramentas",
+          img: toolkitImgPath,
+        },
+      ],
     },
     {
       title: "Customer Experience Intern",
@@ -100,6 +117,21 @@ module.exports = {
       period: "Ago 2021 - Dez 2021",
       description:
         "- Desenvolvimento de projetos web em React.js e projetos mobile em React Native;\n- Elaboração de posts para redes sociais, redação de artigos para o blog da empresa e planejamento de conteúdo;\n- Membro da Iniciativa de Diversidade e Inclusão, movimento que visa promover práticas de D&I dentro da empresa;\n- Ideação e design de brindes para o aniversário da empresa.",
+    },
+    {
+      title: "Extensionista em Desenvolvimento Front-End",
+      place: "Open Knowledge Brasil",
+      description: "",
+      period: "Jul 2021 - Out 2021",
+      description:
+        "- Extensionista focado no desenvolvimento front-end para a Escola de Dados\n;- Desenvolvimento da Caixa de Ferramentas do Jornalismo de Dados, uma base online e colaborativa de várias ferramentas para trabalhar e analisar dados construída com React.js e Next.js.",
+      media: [
+        {
+          link: "http://kit.jornalismodedados.org/",
+          title: "Caixa de Ferramentas",
+          img: toolkitImgPath,
+        },
+      ],
     },
     {
       title: "Estagiário de Experiência do cliente",
